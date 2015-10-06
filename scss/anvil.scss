@@ -1,0 +1,45 @@
+/* ================= */
+/*     A N V I L     */
+/* ----------------- */
+/*   Version 0.1.0   */
+/* ================= */
+/*                   */
+/* "It is better to  */
+/*   be the hammer   */
+/*  than the anvil"  */
+/*         ~         */
+/*  Emily Dickinson  */
+/*                   */
+/* ================= */
+
+/*-------------
+    Setup
+-------------*/
+
+/* Spaces */
+    $base-space: 5px;
+
+/* Form */
+    // Backgrounds
+    $background-input: #fff;
+    $background-addon-input: #fdfdfd;
+    // Box Shadow
+    $boxshadow-input: 0 2px 1px rgba(0,0,0,.075), inset 0 1px 1px rgba(0,0,0,.025);
+    // Border
+    $border-addon-input: rgba(0,0,0,.025);
+    // Text Colors
+    $color-addon-input: #ccc;
+    $color-placeholder-input: $color-addon-input;
+    $color-input: #666;
+
+/* Highlights */
+    $general-highlight: rgba(255, 255, 255, .05);
+    $sidebar-highlight: $general-highlight;
+
+/*-------------
+    Imports
+--------------*/
+
+@import "anvil/normalize";
+@import "anvil/mixins";
+@import "anvil/structure";

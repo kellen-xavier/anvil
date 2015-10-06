@@ -1,0 +1,51 @@
+// Input
+::-webkit-input-placeholder{
+    color: $color-placeholder-input;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.a-input--group{
+    background: $background-input;
+    border-collapse: separate;
+    box-shadow: $boxshadow-input;
+    display: inline-table;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+
+    input{
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        display: table-cell;
+        float: left;
+        padding: ($base-space * 2);
+        width: 100%;
+
+        & + .a-addon{
+            border-left: 1px solid $border-addon-input;
+            border-right: none;
+        }
+
+        & + .a-addon + input {
+            border-left: 1px solid $border-addon-input;
+        }
+    }
+
+    .a-addon{
+        @include user-select('none');
+        background: $background-addon-input;
+        border-right: 1px solid $border-addon-input;
+        color: $color-addon-input;
+        cursor: default;
+        display: table-cell;
+        padding: $base-space * 2;
+        text-align: center;
+        vertical-align: middle;
+        width: 5%;
+    }
+
+}

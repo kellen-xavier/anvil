@@ -1,0 +1,26 @@
+// Sidebar
+.a-sidebar{
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            i{
+                margin-right: $base-space * 3;
+            }
+            a{
+                display: block;
+                padding: $base-space * 3;
+                text-decoration: none;
+            }
+            &.active{
+                background: $sidebar-highlight;
+            }
+            &.child{
+                padding-left: $base-space * 5;
+            }
+            &:hover{
+                background: $sidebar-highlight;
+            }
+        }
+    }
+}

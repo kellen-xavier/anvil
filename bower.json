@@ -1,0 +1,24 @@
+{
+  "name": "Anvil",
+  "version": "0.1.0",
+  "homepage": "https://github.com/xtechcommercelab/anvil",
+  "authors": [
+    "João Pedro Gonçalves <joao.kmz@gmail.com>"
+  ],
+  "description": "Anvil, the artisan way of building",
+  "main": "scss/anvil.scss",
+  "keywords": [
+    "Anvil",
+    "Frontend",
+    "Framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "docs",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

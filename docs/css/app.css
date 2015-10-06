@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+header {
+    background: #fafafa;
+    height: 80px;
+    width: 100%;
+}
+
+header .title {
+    background: #56504B;
+    display: flex;
+    float: left;
+    max-height: 100%;
+    width: 20%;
+}
+
+header .title h1 {
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 5px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+header .search{
+    float: left;
+    max-height: 80px;
+    padding: 18px;
+    width:  30%;
+}
+
+nav {
+    background: #312C27;
+    bottom: 0;
+    overflow-y: scroll;
+    top: 80px;
+    width: 20%;
+}
+
+nav a {
+    color: #847A6F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin-left: 20%;
+    padding: 0 20px;
+    position: relative;
+    top: 80px;
+}
+
+.part{
+    float: left;
+    margin-right: 20px;
+    width: 500px;    
+}
