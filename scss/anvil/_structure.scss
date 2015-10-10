@@ -6,11 +6,14 @@
     box-sizing: border-box;
 }
 
+// General 
+@import "elements/general";
+
 // Positions
 @import "elements/positions";
 
 // Navigations
 @import "elements/navigations";
 
-// format
+// Form
 @import "elements/form";

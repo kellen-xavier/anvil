@@ -1,0 +1,37 @@
+// Clear
+
+.a-clear {
+	&:before,
+    &:after {
+		display: table;
+		content: " ";    	
+    }
+    &:after {
+		clear: both;    	
+    }
+}
+
+
+// Scrollbar
+::-webkit-scrollbar {
+	background: rgba(255,255,255,.05);
+	position: fixed;
+	right: 0;
+	width: 5px;
+}
+
+::-webkit-scrollbar-button {
+	display: none;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(255,255,255,.05);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}

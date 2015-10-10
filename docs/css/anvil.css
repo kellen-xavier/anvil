@@ -385,6 +385,30 @@ th {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+.a-clear:before, .a-clear:after {
+  display: table;
+  content: " "; }
+.a-clear:after {
+  clear: both; }
+
+::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0.05);
+  position: fixed;
+  right: 0;
+  width: 5px; }
+
+::-webkit-scrollbar-button {
+  display: none; }
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); }
+
+::-webkit-scrollbar-thumb {
+  background: #666; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; }
+
 .a-fixed, .a-fixed--top, .a-fixed--bottom, .a-fixed--left, .a-fixed--right {
   position: fixed; }
 
@@ -417,13 +441,13 @@ th {
     background: rgba(255, 255, 255, 0.05); }
 
 ::-webkit-input-placeholder {
-  color: #cccccc; }
+  color: #ccc; }
 
 input:focus {
   outline: 0; }
 
 .a-input--group {
-  background: white;
+  background: #fff;
   border-collapse: separate;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.075), inset 0 1px 1px rgba(0, 0, 0, 0.025);
   display: inline-table;
@@ -434,27 +458,30 @@ input:focus {
     background: transparent;
     border: none;
     box-shadow: none;
+    color: #999;
     display: table-cell;
     float: left;
     padding: 10px;
     width: 100%; }
+    .a-input--group input:hover {
+      background: #fafafa; }
     .a-input--group input + .a-addon {
-      border-left: 1px solid rgba(0, 0, 0, 0.025);
-      border-right: none; }
-    .a-input--group input + .a-addon + input {
-      border-left: 1px solid rgba(0, 0, 0, 0.025); }
+      border-left: 1px solid #eee; }
   .a-input--group .a-addon {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    background: #fdfdfd;
-    border-right: 1px solid rgba(0, 0, 0, 0.025);
-    color: #cccccc;
+    background: #f3f3f3;
+    color: #ccc;
     cursor: default;
     display: table-cell;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
     width: 5%; }
+    .a-input--group .a-addon + input {
+      border-left: 1px solid #eee; }
+
+/*# sourceMappingURL=anvil.css.map */

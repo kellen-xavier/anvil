@@ -1,24 +1,29 @@
-// Sidebar
-.a-sidebar{
-    ul{
+.a-sidebar {
+    ul {
         margin: 0;
         padding: 0;
-        li{
-            i{
+
+        li {
+
+            i {
                 margin-right: $base-space * 3;
             }
-            a{
+
+            a {
                 display: block;
                 padding: $base-space * 3;
                 text-decoration: none;
             }
-            &.active{
+
+            &.active {
                 background: $sidebar-highlight;
             }
-            &.child{
+
+            &.child {
                 padding-left: $base-space * 5;
             }
-            &:hover{
+            
+            &:hover {
                 background: $sidebar-highlight;
             }
         }

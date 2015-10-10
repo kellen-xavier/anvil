@@ -22,15 +22,17 @@
 /* Form */
     // Backgrounds
     $background-input: #fff;
-    $background-addon-input: #fdfdfd;
+    $background-addon-input: #f3f3f3;
+    // Hover 
+    $hover-input: #fafafa;
     // Box Shadow
     $boxshadow-input: 0 2px 1px rgba(0,0,0,.075), inset 0 1px 1px rgba(0,0,0,.025);
     // Border
-    $border-addon-input: rgba(0,0,0,.025);
+    $border-addon-input: #eee;
     // Text Colors
     $color-addon-input: #ccc;
     $color-placeholder-input: $color-addon-input;
-    $color-input: #666;
+    $color-input: #999;
 
 /* Highlights */
     $general-highlight: rgba(255, 255, 255, .05);

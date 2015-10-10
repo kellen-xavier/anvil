@@ -1,13 +1,13 @@
 // Input
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color: $color-placeholder-input;
 }
 
-input:focus{
+input:focus {
     outline: 0;
 }
 
-.a-input--group{
+.a-input--group {
     background: $background-input;
     border-collapse: separate;
     box-shadow: $boxshadow-input;
@@ -16,29 +16,28 @@ input:focus{
     vertical-align: middle;
     width: 100%;
 
-    input{
+    input {
         background: transparent;
         border: none;
         box-shadow: none;
+        color: $color-input;
         display: table-cell;
         float: left;
         padding: ($base-space * 2);
         width: 100%;
 
-        & + .a-addon{
-            border-left: 1px solid $border-addon-input;
-            border-right: none;
+        &:hover {
+            background: $hover-input;
         }
 
-        & + .a-addon + input {
+        & + .a-addon {
             border-left: 1px solid $border-addon-input;
         }
     }
 
-    .a-addon{
+    .a-addon {
         @include user-select('none');
         background: $background-addon-input;
-        border-right: 1px solid $border-addon-input;
         color: $color-addon-input;
         cursor: default;
         display: table-cell;
@@ -46,6 +45,10 @@ input:focus{
         text-align: center;
         vertical-align: middle;
         width: 5%;
+
+        & + input {
+            border-left: 1px solid $border-addon-input;
+        }
     }
 
 }
