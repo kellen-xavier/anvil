@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Anvil</title>
+
+    <link rel="stylesheet" href="css/anvil.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="a-fixed--top">
+        <div class="title">
+            <h1>Anvil</h1>
+        </div>
+
+        <div class="search">
+            <div class="a-input">
+                <span class="a-addon">
+                    <i class="fa fa-fw fa-search"></i>
+                    <input type="text">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="a-fixed--left a-sidebar">
+        <ul>
+            <li class="active"><a href="form.html"><i class="fa fa-fw fa-edit"></i> Form</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-picture-o"></i> Gallery</a></li>
+            <li class="child"><a href="#"><i class="fa fa-fw fa-download"></i> Downloads</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-users"></i> Users</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container a-clear">
+        <h2>SASS Collection</h2>
+
+        <div class="part">
+            <h3>Labeled Inputs</h3>
+
+            <div class="a-input">
+                <label for="labeled">Labeled input</label>
+                <input id="labeled" type="text" placeholder="Eg. Example">
+            </div>
+
+            <div class="a-input">
+                <label for="labeled-addon">Labeled input with an addon</label>
+                <span class="a-addon">
+                    <i class="fa fa-fw fa-search"></i>
+                    <input id="labeled-addon" type="text">
+                </span>
+            </div>
+
+            <div class="a-input">
+                <label for="labeled-addon-both">Labeled input between two addons</label>
+                <span class="a-addon">
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <input id="labeled-addon-both" type="text"  placeholder="Eg. john94">
+                    <i>@gmail.com</i>
+                </span>
+            </div>
+
+            <div class="a-input">
+                <label for="labeled-addon-beetween">Addon between two inputs</label>
+                <span class="a-addon">
+                    <input id="labeled-addon-beetween" type="text">
+                    <i>to</i>
+                    <input type="text">
+                </span>
+            </div>
+        </div>
+
+        <div class="part">
+            <h3>Inputs</h3>
+
+            <div class="a-input">
+                <input type="text" placeholder="Normal Input">
+            </div>
+
+            <div class="a-input">
+                <span class="a-addon">
+                    <i class="fa fa-fw fa-search"></i>
+                    <input id="labeled-addon" type="text">
+                </span>
+            </div>
+
+            <div class="a-input">
+                <span class="a-addon">
+                    <input id="labeled-addon" type="text">
+                    <i class="fa fa-fw fa-search"></i>
+                </span>
+            </div>
+
+            <div class="a-input">
+                <span class="a-addon">
+                    <i class="fa fa-fw fa-envelope"></i>
+                    <input id="labeled-addon-both" type="text"  placeholder="Eg. john94">
+                    <i>@gmail.com</i>
+                </span>
+            </div>
+
+            <div class="a-input">
+                <span class="a-addon">
+                    <input id="labeled-addon-beetween" type="text">
+                    <i>to</i>
+                    <input type="text">
+                </span>
+            </div>
+        </div>
+
+        <div class="part">
+            <h3>Beahavior Inputs</h3>
+
+            <div class="a-input--error">
+                <div class="a-addon">
+                    <input type="text" value="John Silver">
+                    <i class="fa fa-fw fa-times-circle"></i>
+                </div>
+            </div>
+
+            <div class="a-input">
+                <label for="labeled-disabled">Disabled Input</label>
+                <input disabled id="labeled-disabled" type="text" value="John Silver">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

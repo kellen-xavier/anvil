@@ -19,20 +19,31 @@
 /* Spaces */
     $base-space: 5px;
 
+/* Base Color */
+    $warning-light-color: #fff9f9;
+    $warning-color: #d08a8a;
+
 /* Form */
     // Backgrounds
     $background-input: #fff;
-    $background-addon-input: #f3f3f3;
-    // Hover 
-    $hover-input: #fafafa;
-    // Box Shadow
-    $boxshadow-input: 0 2px 1px rgba(0,0,0,.075), inset 0 1px 1px rgba(0,0,0,.025);
+    $background-input-hover: #fafafa;
+    $background-input-error: $warning-light-color;
+    $background-input-disabled: #fafafa;
+    $background-addon: #f3f3f3;
+    $background-addon-error: $warning-light-color;
     // Border
-    $border-addon-input: #eee;
+    $border-input: #eee;
+    $border-input-error: $warning-color;
+    $border-label: $border-input;
+    $border-addon: $border-input;
     // Text Colors
-    $color-addon-input: #ccc;
-    $color-placeholder-input: $color-addon-input;
+    $color-label: #aaa;
     $color-input: #999;
+    $color-input-error: $warning-color;
+    $color-input-disabled: #ccc;
+    $color-input-placeholder: #ccc;
+    $color-addon: #ccc;
+    $color-addon-error: $warning-color;
 
 /* Highlights */
     $general-highlight: rgba(255, 255, 255, .05);
