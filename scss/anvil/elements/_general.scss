@@ -1,13 +1,19 @@
+// Removes outline
+
+*:focus {
+    outline: 0;
+}
+
 // Clear
 
 .a-clear {
 	&:before,
     &:after {
 		display: table;
-		content: " ";    	
+		content: " ";
     }
     &:after {
-		clear: both;    	
+		clear: both;
     }
 }
 

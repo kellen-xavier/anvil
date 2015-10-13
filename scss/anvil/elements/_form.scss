@@ -1,22 +1,30 @@
 // Input
 ::-webkit-input-placeholder {
-    color: $color-placeholder-input;
+    color: $color-input-placeholder;
 }
 
-input:focus {
-    outline: 0;
-}
-
-.a-input--group {
+.a-input {
     background: $background-input;
-    border-collapse: separate;
-    box-shadow: $boxshadow-input;
+    border: 1px solid $border-input;
     display: inline-table;
     position: relative;
     vertical-align: middle;
     width: 100%;
 
+    & + & {
+        margin-top: $base-space * 3;
+    }
+
+    label {
+        border-bottom: 1px solid $border-label;
+        color: $color-label;
+        display: block;
+        font-size: $fs-12;
+        padding: $base-space ($base-space * 2);
+    }
+
     input {
+        transition: background .25s ease;
         background: transparent;
         border: none;
         box-shadow: none;
@@ -26,29 +34,62 @@ input:focus {
         padding: ($base-space * 2);
         width: 100%;
 
+        &:focus,
         &:hover {
-            background: $hover-input;
+            background: $background-input-hover;
+        }
+
+        &:disabled{
+            background: $background-input-disabled;
+            color: $color-input-disabled;
         }
 
         & + .a-addon {
-            border-left: 1px solid $border-addon-input;
+            border-left: 1px solid $border-addon;
         }
     }
 
     .a-addon {
-        @include user-select('none');
-        background: $background-addon-input;
-        color: $color-addon-input;
-        cursor: default;
-        display: table-cell;
-        padding: $base-space * 2;
-        text-align: center;
-        vertical-align: middle;
-        width: 5%;
+        display: table;
+        width: 100%;
+
+        i {
+            @include user-select('none');
+            background: $background-addon;
+            color: $color-addon;
+            cursor: default;
+            display: table-cell;
+            font-style: normal;
+            padding: $base-space * 2;
+            text-align: center;
+            vertical-align: middle;
+            width: 5%;
+        }
 
         & + input {
-            border-left: 1px solid $border-addon-input;
+            border-left: 1px solid $border-addon;
         }
     }
 
+}
+
+.a-input--error {
+    @extend .a-input;
+    border-color: $border-input-error;
+
+    input {
+        color: $color-input-error;
+
+        &:focus,
+        &:hover {
+            background: $background-input-error;
+        }
+    }
+
+    .a-addon {
+        i {
+            background: $background-addon-error;
+            color: $color-addon-error;
+        }
+    }
 }
