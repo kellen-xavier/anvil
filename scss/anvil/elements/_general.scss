@@ -1,11 +1,19 @@
-// Removes outline
+// Set base font-size 
+html {
+    font-size: $base-fs;
+}
 
+// Set border-box
+* {
+	box-sizing: border-box;
+}
+
+// Removes focus outline
 *:focus {
     outline: 0;
 }
 
 // Clear
-
 .a-clear {
 	&:before,
     &:after {
@@ -16,7 +24,6 @@
 		clear: both;
     }
 }
-
 
 // Scrollbar
 ::-webkit-scrollbar {

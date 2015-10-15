@@ -16,8 +16,10 @@
 -------------*/
 /* Spaces */
 /* Base Color */
+/* Card */
 /* Form */
 /* Highlights */
+/* Fonts */
 /*-------------
     Imports
 --------------*/
@@ -379,30 +381,11 @@ td,
 th {
   padding: 0; }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
 html {
   font-size: 16px; }
 
-.a-fixed, .a-fixed--top, .a-fixed--bottom, .a-fixed--left, .a-fixed--right {
-  position: fixed; }
-
-.a-fixed--top {
-  top: 0; }
-
-.a-fixed--bottom {
-  bottom: 0; }
-
-.a-fixed--left {
-  left: 0; }
-
-.a-fixed--right {
-  right: 0; }
+* {
+  box-sizing: border-box; }
 
 *:focus {
   outline: 0; }
@@ -431,6 +414,21 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #777; }
 
+.a-fixed, .a-fixed--top, .a-fixed--bottom, .a-fixed--left, .a-fixed--right {
+  position: fixed; }
+
+.a-fixed--top {
+  top: 0; }
+
+.a-fixed--bottom {
+  bottom: 0; }
+
+.a-fixed--left {
+  left: 0; }
+
+.a-fixed--right {
+  right: 0; }
+
 .a-sidebar ul {
   margin: 0;
   padding: 0; }
@@ -447,12 +445,17 @@ html {
   .a-sidebar ul li:hover {
     background: rgba(255, 255, 255, 0.05); }
 
+.a-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 15px; }
+
 ::-webkit-input-placeholder {
-  color: #cccccc; }
+  color: #ccc; }
 
 .a-input, .a-input--error {
-  background: white;
-  border: 1px solid #eeeeee;
+  background: #fff;
+  border: 1px solid #eee;
   display: inline-table;
   position: relative;
   vertical-align: middle;
@@ -460,8 +463,8 @@ html {
   .a-input + .a-input, .a-input--error + .a-input, .a-input + .a-input--error, .a-input--error + .a-input--error {
     margin-top: 15px; }
   .a-input label, .a-input--error label {
-    border-bottom: 1px solid #eeeeee;
-    color: #aaaaaa;
+    border-bottom: 1px solid #eee;
+    color: #aaa;
     display: block;
     font-size: 0.75em;
     padding: 5px 10px; }
@@ -470,7 +473,7 @@ html {
     background: transparent;
     border: none;
     box-shadow: none;
-    color: #999999;
+    color: #999;
     display: table-cell;
     float: left;
     padding: 10px;
@@ -479,9 +482,9 @@ html {
       background: #fafafa; }
     .a-input input:disabled, .a-input--error input:disabled {
       background: #fafafa;
-      color: #cccccc; }
+      color: #ccc; }
     .a-input input + .a-addon, .a-input--error input + .a-addon {
-      border-left: 1px solid #eeeeee; }
+      border-left: 1px solid #eee; }
   .a-input .a-addon, .a-input--error .a-addon {
     display: table;
     width: 100%; }
@@ -492,7 +495,7 @@ html {
       -o-user-select: none;
       user-select: none;
       background: #f3f3f3;
-      color: #cccccc;
+      color: #ccc;
       cursor: default;
       display: table-cell;
       font-style: normal;
@@ -501,7 +504,7 @@ html {
       vertical-align: middle;
       width: 5%; }
     .a-input .a-addon + input, .a-input--error .a-addon + input {
-      border-left: 1px solid #eeeeee; }
+      border-left: 1px solid #eee; }
 
 .a-input--error {
   border-color: #d08a8a; }
@@ -512,3 +515,5 @@ html {
   .a-input--error .a-addon i {
     background: #fff9f9;
     color: #d08a8a; }
+
+/*# sourceMappingURL=anvil.css.map */

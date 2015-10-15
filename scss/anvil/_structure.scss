@@ -1,22 +1,10 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-// Fonts
-@import "elements/fonts";
-
-// Positions
-@import "elements/positions";
-
 // General
 @import "elements/general";
+@import "elements/positions";
 
-// Navigations
+// Styling
 @import "elements/navigations";
 
-// Form
+// Base Elements
+@import "elements/cards";
 @import "elements/form";
