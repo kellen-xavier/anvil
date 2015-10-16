@@ -3,11 +3,12 @@
 
 /* Base Color */
     // Primary Color 
+    $primary-light-color: #1698DA;
     $primary-color: #0B87C6;
-
     // Warning
-    $warning-light-color: #fff9f9;
-    $warning-color: #d08a8a;
+    $warning-lighter-color: #FFCCCC;
+    $warning-light-color: #F37474;
+    $warning-color: #DE5252;
 
 /* Card */
     // Backgrounds 
@@ -19,23 +20,40 @@
     // Backgrounds
     $background-input: #fff;
     $background-input-hover: #fafafa;
-    $background-input-error: $warning-light-color;
     $background-input-disabled: #fafafa;
+    $background-input-error: rgba($warning-lighter-color, .125);
+    $background-input-error-message: $warning-lighter-color;
     $background-addon: #f3f3f3;
-    $background-addon-error: $warning-light-color;
+    $background-addon-error: $warning-lighter-color;
+    $background-button: #fff;
+    $background-button-hover: #fafafa;
+    $background-button-primary: $primary-color;
+    $background-button-primary-hover: $primary-light-color;
+    $background-button-warning: $warning-color;
+    $background-button-warning-hover: $warning-light-color;
     // Border
     $border-input: #eee;
     $border-input-error: $warning-color;
     $border-label: $border-input;
     $border-addon: $border-input;
+    $border-button: #ddd;
+    $border-button-hover: #ccc;
+    $border-button-primary: $primary-color;
+    $border-button-primary-hover: $primary-light-color;
+    $border-button-warning: $warning-color;
+    $border-button-warning-hover: $warning-light-color;
     // Text Colors
     $color-label: #aaa;
     $color-input: #999;
-    $color-input-error: $warning-color;
     $color-input-disabled: #ccc;
+    $color-input-error: $warning-color;
+    $color-input-error-message: $warning-color;
     $color-input-placeholder: #ccc;
-    $color-addon: #ccc;
+    $color-addon: $color-label;
     $color-addon-error: $warning-color;
+    $color-button: $color-input;
+    $color-button-primary: #fff;
+    $color-button-warning: #fff;
 
 /* Highlights */
     $general-highlight: rgba(255, 255, 255, .05);

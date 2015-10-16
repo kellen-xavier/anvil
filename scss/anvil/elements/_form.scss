@@ -6,6 +6,7 @@
 .a-input {
     background: $background-input;
     border: 1px solid $border-input;
+    border-bottom-width: 2px;
     display: inline-table;
     position: relative;
     vertical-align: middle;
@@ -54,14 +55,14 @@
         width: 100%;
 
         i {
-            @include user-select('none');
             background: $background-addon;
             color: $color-addon;
             cursor: default;
             display: table-cell;
             font-style: normal;
-            padding: $base-space * 2;
+            padding: $base-space ($base-space * 2);
             text-align: center;
+            user-select: none;
             vertical-align: middle;
             width: 5%;
         }
@@ -90,6 +91,68 @@
         i {
             background: $background-addon-error;
             color: $color-addon-error;
+        }
+    }
+
+    .a-error {
+        background: $background-input-error-message;
+        color: $color-input-error-message;
+        display: block;
+        font-size: $fs-12;
+        padding: $base-space ($base-space * 2);
+        text-transform: uppercase;
+    }
+}
+
+// Button 
+.a-button {
+    button {
+        background: $background-button;
+        border: 1px solid $border-button;
+        border-bottom-width: 2px;
+        color: $color-button;
+        font-weight: bold;
+        margin: $base-space 0;
+        padding: ($base-space * 2) ($base-space * 4);
+        width: 100%;
+
+        &:hover {
+            background: $background-button-hover;
+            border-color: $border-button-hover;
+        }
+    }
+    
+    .a-button--primary {
+        background: $background-button-primary;
+        border-color: $border-button-primary;
+        color: set-contrast-color($background-button-primary);
+
+        &:hover {
+            background: $background-button-primary-hover;
+            border-color: $border-button-primary-hover;
+        }
+    }
+
+    .a-button--warning {
+        background: $background-button-warning;
+        border-color: $border-button-warning;
+        color: set-contrast-color($background-button-warning);
+
+        &:hover {
+            background: $background-button-warning-hover;
+            border-color: $border-button-warning-hover;
+        }
+    }
+}
+
+.a-button--grouped {
+    @extend .a-button;
+
+    button {
+        width: auto;
+
+        & + button {
+            margin-left: $base-space;
         }
     }
 }

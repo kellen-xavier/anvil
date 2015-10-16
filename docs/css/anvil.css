@@ -382,7 +382,8 @@ th {
   padding: 0; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.6; }
 
 * {
   box-sizing: border-box; }
@@ -456,6 +457,7 @@ html {
 .a-input, .a-input--error {
   background: #fff;
   border: 1px solid #eee;
+  border-bottom-width: 2px;
   display: inline-table;
   position: relative;
   vertical-align: middle;
@@ -489,31 +491,66 @@ html {
     display: table;
     width: 100%; }
     .a-input .a-addon i, .a-input--error .a-addon i {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -o-user-select: none;
-      user-select: none;
       background: #f3f3f3;
-      color: #ccc;
+      color: #aaa;
       cursor: default;
       display: table-cell;
       font-style: normal;
-      padding: 10px;
+      padding: 5px 10px;
       text-align: center;
+      user-select: none;
       vertical-align: middle;
       width: 5%; }
     .a-input .a-addon + input, .a-input--error .a-addon + input {
       border-left: 1px solid #eee; }
 
 .a-input--error {
-  border-color: #d08a8a; }
+  border-color: #DE5252; }
   .a-input--error input {
-    color: #d08a8a; }
+    color: #DE5252; }
     .a-input--error input:focus, .a-input--error input:hover {
-      background: #fff9f9; }
+      background: rgba(255, 204, 204, 0.125); }
   .a-input--error .a-addon i {
-    background: #fff9f9;
-    color: #d08a8a; }
+    background: #FFCCCC;
+    color: #DE5252; }
+  .a-input--error .a-error {
+    background: #FFCCCC;
+    color: #DE5252;
+    display: block;
+    font-size: 0.75em;
+    padding: 5px 10px;
+    text-transform: uppercase; }
+
+.a-button button, .a-button--grouped button {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+  color: #999;
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 10px 20px;
+  width: 100%; }
+  .a-button button:hover, .a-button--grouped button:hover {
+    background: #fafafa;
+    border-color: #ccc; }
+.a-button .a-button--primary, .a-button--grouped .a-button--primary {
+  background: #0B87C6;
+  border-color: #0B87C6;
+  color: white; }
+  .a-button .a-button--primary:hover, .a-button--grouped .a-button--primary:hover {
+    background: #1698DA;
+    border-color: #1698DA; }
+.a-button .a-button--warning, .a-button--grouped .a-button--warning {
+  background: #DE5252;
+  border-color: #DE5252;
+  color: black; }
+  .a-button .a-button--warning:hover, .a-button--grouped .a-button--warning:hover {
+    background: #F37474;
+    border-color: #F37474; }
+
+.a-button--grouped button {
+  width: auto; }
+  .a-button--grouped button + button {
+    margin-left: 5px; }
 
 /*# sourceMappingURL=anvil.css.map */
