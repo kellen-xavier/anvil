@@ -2,61 +2,89 @@
     $base-space: 5px;
 
 /* Base Color */
-    // Primary Color 
-    $primary-light-color: #1698DA;
+    $base-color: #fff;
     $primary-color: #0B87C6;
-    // Warning
-    $warning-lighter-color: #FFCCCC;
-    $warning-light-color: #F37474;
-    $warning-color: #DE5252;
+    $success-color: #52B321;
+    $warning-color: #FBCF29;
+    $danger-color: #DE5252;
 
 /* Card */
     // Backgrounds 
-    $background-card: #fff;
+    $background-card: $base-color;
     // Border
-    $border-card: #eee;
+    $border-card: darken($base-color, 10);
 
 /* Form */
-    // Backgrounds
-    $background-input: #fff;
-    $background-input-hover: #fafafa;
-    $background-input-disabled: #fafafa;
-    $background-input-error: rgba($warning-lighter-color, .125);
-    $background-input-error-message: $warning-lighter-color;
-    $background-addon: #f3f3f3;
-    $background-addon-error: $warning-lighter-color;
-    $background-button: #fff;
-    $background-button-hover: #fafafa;
-    $background-button-primary: $primary-color;
-    $background-button-primary-hover: $primary-light-color;
-    $background-button-warning: $warning-color;
-    $background-button-warning-hover: $warning-light-color;
-    // Border
-    $border-input: #eee;
-    $border-input-error: $warning-color;
-    $border-label: $border-input;
-    $border-addon: $border-input;
-    $border-button: #ddd;
-    $border-button-hover: #ccc;
-    $border-button-primary: $primary-color;
-    $border-button-primary-hover: $primary-light-color;
-    $border-button-warning: $warning-color;
-    $border-button-warning-hover: $warning-light-color;
-    // Text Colors
-    $color-label: #aaa;
-    $color-input: #999;
-    $color-input-disabled: #ccc;
-    $color-input-error: $warning-color;
-    $color-input-error-message: $warning-color;
-    $color-input-placeholder: #ccc;
-    $color-addon: $color-label;
-    $color-addon-error: $warning-color;
-    $color-button: $color-input;
-    $color-button-primary: #fff;
-    $color-button-warning: #fff;
+    /* Background */
+        // Input
+        $background-input: $base-color;
+        $background-input-hover: darken($background-input, 2);
+        $background-input-disabled: $background-input-hover;
+        $background-input-error: lighten($danger-color, 38);
+        $background-input-error-message: $danger-color;
+        // Addon
+        $background-addon: darken($background-input, 5);
+        $background-addon-error: $background-input-error;
+        // Button
+        $background-button: $base-color;
+        $background-button-hover: darken($background-input, 5);
+        // Button Primary
+        $background-button-primary: $primary-color;
+        $background-button-primary-hover: lighten($primary-color, 5);
+        // Button Success
+        $background-button-success: $success-color;
+        $background-button-success-hover: lighten($success-color, 5);
+        // Button Warning
+        $background-button-warning: $warning-color;
+        $background-button-warning-hover: lighten($warning-color, 5);
+        // Button Danger
+        $background-button-danger: $danger-color;
+        $background-button-danger-hover: lighten($danger-color, 5);
+    /* Border */
+        // Input
+        $border-input: darken($background-input, 10);
+        $border-input-error: $danger-color;
+        // Label
+        $border-label: $border-input;
+        // Addon
+        $border-addon: $border-input;
+        // Button
+        $border-button: darken($background-button, 15);
+        $border-button-hover: darken($background-button-hover, 15);
+        // Button Primary
+        $border-button-primary: darken($background-button-primary, 10);
+        $border-button-primary-hover: darken($background-button-primary-hover, 15);
+        // Button Success
+        $border-button-success: darken($background-button-success, 10);
+        $border-button-success-hover: darken($background-button-success-hover, 15);
+        // Button Warning
+        $border-button-warning: darken($background-button-warning, 10);
+        $border-button-warning-hover: darken($background-button-warning-hover, 15);
+        // Button Danger
+        $border-button-danger: darken($background-button-danger, 10);
+        $border-button-danger-hover: darken($background-button-danger-hover, 15);
+    /* Color */
+        // Input
+        $color-input: darken($base-color, 50);
+        $color-input-disabled: darken($base-color, 25);
+        $color-input-error: $danger-color;
+        $color-input-error-message: $base-color;
+        $color-input-placeholder: $color-input-disabled;
+        // Label
+        $color-label: #aaa;
+        // Addon
+        $color-addon: $color-label;
+        $color-addon-error: $danger-color;
+        // Button
+        $color-button: $color-input;
+        $color-button-link-hover: $primary-color;
+        $color-button-primary: #fff;
+        $color-button-success: #fff;
+        $color-button-warning: #444;
+        $color-button-danger: #fff;
 
 /* Highlights */
-    $general-highlight: rgba(255, 255, 255, .05);
+    $general-highlight: rgba(white, .05);
     $sidebar-highlight: $general-highlight;
 
 /* Fonts */

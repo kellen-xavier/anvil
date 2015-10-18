@@ -1,7 +1,6 @@
 // Set base font-size 
 html {
     font-size: $base-fs;
-    line-height: 1.6;
 }
 
 // Set border-box
@@ -14,16 +13,52 @@ html {
     outline: 0;
 }
 
-// Clear
-.a-clear {
-	&:before,
-    &:after {
-		display: table;
-		content: " ";
-    }
-    &:after {
-		clear: both;
-    }
+/* General classes */
+// Space
+.space--up {
+	margin-top: $base-space * 2;
+}
+
+.space--down {
+	margin-bottom: $base-space * 2;
+}
+
+.space--left {
+	margin-left: $base-space * 2;
+}
+
+.space-right {
+	margin-right: $base-space * 2;
+}
+// Width
+.half {
+	width: 50%;
+}
+
+.full {
+	width: 100%;
+}
+
+// Roundness
+.rounded {
+    border-radius: ($base-space * 2);
+}
+
+.circle {
+	border-radius: 100%;
+}
+
+// Text Align
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
 }
 
 // Scrollbar

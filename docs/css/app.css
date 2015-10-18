@@ -1,14 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-header {
+.topbar {
     background: #fafafa;
     height: 80px;
     width: 100%;
     z-index: 9;
 }
 
-header .title {
+.topbar .title {
     background: #56504B;
     display: flex;
     float: left;
@@ -16,7 +16,7 @@ header .title {
     width: 20%;
 }
 
-header .title h1 {
+.topbar .title h1 {
     color: #fff;
     font-family: 'Righteous', cursive;
     letter-spacing: 5px;
@@ -24,7 +24,7 @@ header .title h1 {
     text-transform: uppercase;
 }
 
-header .search{
+.topbar .search{
     float: left;
     max-height: 80px;
     padding: 18px;
@@ -46,6 +46,7 @@ nav a {
 }
 
 .container {
+    clear: both;
     margin-left: 20%;
     margin-top: 80px;
     padding: 20px;

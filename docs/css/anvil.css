@@ -18,6 +18,9 @@
 /* Base Color */
 /* Card */
 /* Form */
+/* Background */
+/* Border */
+/* Color */
 /* Highlights */
 /* Fonts */
 /*-------------
@@ -382,8 +385,7 @@ th {
   padding: 0; }
 
 html {
-  font-size: 16px;
-  line-height: 1.6; }
+  font-size: 16px; }
 
 * {
   box-sizing: border-box; }
@@ -391,11 +393,39 @@ html {
 *:focus {
   outline: 0; }
 
-.a-clear:before, .a-clear:after {
-  display: table;
-  content: " "; }
-.a-clear:after {
-  clear: both; }
+/* General classes */
+.space--up {
+  margin-top: 10px; }
+
+.space--down {
+  margin-bottom: 10px; }
+
+.space--left {
+  margin-left: 10px; }
+
+.space-right {
+  margin-right: 10px; }
+
+.half {
+  width: 50%; }
+
+.full {
+  width: 100%; }
+
+.rounded {
+  border-radius: 10px; }
+
+.circle {
+  border-radius: 100%; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center; }
 
 ::-webkit-scrollbar {
   background: rgba(255, 255, 255, 0.05);
@@ -448,15 +478,17 @@ html {
 
 .a-card {
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
   padding: 15px; }
+  .a-card header p {
+    margin: 0; }
 
 ::-webkit-input-placeholder {
-  color: #ccc; }
+  color: #bfbfbf; }
 
 .a-input, .a-input--error {
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
   border-bottom-width: 2px;
   display: inline-table;
   position: relative;
@@ -465,7 +497,7 @@ html {
   .a-input + .a-input, .a-input--error + .a-input, .a-input + .a-input--error, .a-input--error + .a-input--error {
     margin-top: 15px; }
   .a-input label, .a-input--error label {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e6e6e6;
     color: #aaa;
     display: block;
     font-size: 0.75em;
@@ -475,7 +507,7 @@ html {
     background: transparent;
     border: none;
     box-shadow: none;
-    color: #999;
+    color: gray;
     display: table-cell;
     float: left;
     padding: 10px;
@@ -484,14 +516,14 @@ html {
       background: #fafafa; }
     .a-input input:disabled, .a-input--error input:disabled {
       background: #fafafa;
-      color: #ccc; }
+      color: #bfbfbf; }
     .a-input input + .a-addon, .a-input--error input + .a-addon {
-      border-left: 1px solid #eee; }
+      border-left: 1px solid #e6e6e6; }
   .a-input .a-addon, .a-input--error .a-addon {
     display: table;
     width: 100%; }
     .a-input .a-addon i, .a-input--error .a-addon i {
-      background: #f3f3f3;
+      background: #f2f2f2;
       color: #aaa;
       cursor: default;
       display: table-cell;
@@ -502,55 +534,94 @@ html {
       vertical-align: middle;
       width: 5%; }
     .a-input .a-addon + input, .a-input--error .a-addon + input {
-      border-left: 1px solid #eee; }
+      border-left: 1px solid #e6e6e6; }
 
 .a-input--error {
   border-color: #DE5252; }
   .a-input--error input {
     color: #DE5252; }
     .a-input--error input:focus, .a-input--error input:hover {
-      background: rgba(255, 204, 204, 0.125); }
+      background: #fdf5f5; }
   .a-input--error .a-addon i {
-    background: #FFCCCC;
+    background: #fdf5f5;
     color: #DE5252; }
   .a-input--error .a-error {
-    background: #FFCCCC;
-    color: #DE5252;
+    background: #DE5252;
+    color: #fff;
     display: block;
     font-size: 0.75em;
     padding: 5px 10px;
     text-transform: uppercase; }
 
-.a-button button, .a-button--grouped button {
+.a-button button {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #d9d9d9;
   border-bottom-width: 2px;
-  color: #999;
   font-weight: bold;
-  margin: 5px 0;
-  padding: 10px 20px;
-  width: 100%; }
-  .a-button button:hover, .a-button--grouped button:hover {
-    background: #fafafa;
-    border-color: #ccc; }
-.a-button .a-button--primary, .a-button--grouped .a-button--primary {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  .a-button button a {
+    color: gray;
+    display: block;
+    padding: 10px;
+    text-decoration: none; }
+  .a-button button + button {
+    margin-left: 10px; }
+  .a-button button b, .a-button button:hover {
+    background: #f2f2f2;
+    border-color: #cccccc; }
+.a-button .a-button--label a {
+  padding-left: 50px; }
+.a-button .a-button--label b {
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0; }
+.a-button .a-button--flat {
+  border: none; }
+.a-button .a-button--link {
+  background: transparent;
+  border: none; }
+  .a-button .a-button--link:hover {
+    background: transparent; }
+    .a-button .a-button--link:hover a {
+      color: #0B87C6; }
+.a-button .a-button--primary {
   background: #0B87C6;
-  border-color: #0B87C6;
-  color: white; }
-  .a-button .a-button--primary:hover, .a-button--grouped .a-button--primary:hover {
-    background: #1698DA;
-    border-color: #1698DA; }
-.a-button .a-button--warning, .a-button--grouped .a-button--warning {
+  border-color: #086696; }
+  .a-button .a-button--primary b,
+  .a-button .a-button--primary a {
+    color: #fff; }
+  .a-button .a-button--primary b, .a-button .a-button--primary:hover {
+    background: #0c97de;
+    border-color: #086696; }
+.a-button .a-button--success {
+  background: #52B321;
+  border-color: #3e8819; }
+  .a-button .a-button--success b,
+  .a-button .a-button--success a {
+    color: #fff; }
+  .a-button .a-button--success b, .a-button .a-button--success:hover {
+    background: #5cc925;
+    border-color: #3e8819; }
+.a-button .a-button--danger {
   background: #DE5252;
-  border-color: #DE5252;
-  color: black; }
-  .a-button .a-button--warning:hover, .a-button--grouped .a-button--warning:hover {
-    background: #F37474;
-    border-color: #F37474; }
-
-.a-button--grouped button {
-  width: auto; }
-  .a-button--grouped button + button {
-    margin-left: 5px; }
+  border-color: #d42929; }
+  .a-button .a-button--danger b,
+  .a-button .a-button--danger a {
+    color: #fff; }
+  .a-button .a-button--danger b, .a-button .a-button--danger:hover {
+    background: #e26767;
+    border-color: #d42929; }
+.a-button .a-button--warning {
+  background: #FBCF29;
+  border-color: #edbc04; }
+  .a-button .a-button--warning b,
+  .a-button .a-button--warning a {
+    color: #444; }
+  .a-button .a-button--warning b, .a-button .a-button--warning:hover {
+    background: #fbd542;
+    border-color: #edbc04; }
 
 /*# sourceMappingURL=anvil.css.map */

@@ -2,4 +2,10 @@
 	background: $background-card;
 	border: 1px solid $border-card;
 	padding: $base-space * 3;
+
+	header {
+		p {
+			margin: 0;
+		}
+	}
 }
