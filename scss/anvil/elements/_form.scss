@@ -118,7 +118,7 @@
         a {
             color: $color-button;
             display: block;
-            padding: ($base-space * 2);
+            padding: ($base-space * 2) ($base-space * 3);
             text-decoration: none;
         }
 
@@ -131,12 +131,19 @@
             background: $background-button-hover;
             border-color: $border-button-hover;
         }
+
+        &.circle {
+            a {
+                padding: ($base-space * 2);
+            }
+        }
     }
 
     .a-button--label {
         a {
-            padding-left: ($base-space * 10);
+            padding-left: ($base-space * 11);
         }
+
         b {
             left: 0;
             padding: ($base-space * 2);

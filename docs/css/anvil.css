@@ -564,15 +564,17 @@ html {
   .a-button button a {
     color: gray;
     display: block;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none; }
   .a-button button + button {
     margin-left: 10px; }
   .a-button button b, .a-button button:hover {
     background: #f2f2f2;
     border-color: #cccccc; }
+  .a-button button.circle a {
+    padding: 10px; }
 .a-button .a-button--label a {
-  padding-left: 50px; }
+  padding-left: 55px; }
 .a-button .a-button--label b {
   left: 0;
   padding: 10px;
