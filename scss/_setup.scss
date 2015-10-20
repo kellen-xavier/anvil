@@ -2,17 +2,20 @@
     $base-space: 5px;
 
 /* Base Color */
-    $base-color: #fff;
+    $base-color: #fff; // Extremely recommended to let this white
     $primary-color: #0B87C6;
-    $success-color: #52B321;
-    $warning-color: #FBCF29;
+    $success-color: #64A742;
+    $warning-color: #FFD846;
     $danger-color: #DE5252;
 
 /* Card */
-    // Backgrounds 
+    // Backgrounds
     $background-card: $base-color;
     // Border
     $border-card: darken($base-color, 10);
+    // Colors
+    $color-card-action: darken($base-color, 50);
+    $color-card-action-hover: darken($base-color, 35);
 
 /* Form */
     /* Background */

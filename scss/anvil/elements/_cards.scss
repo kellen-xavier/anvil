@@ -1,11 +1,38 @@
 .a-card {
 	background: $background-card;
 	border: 1px solid $border-card;
-	padding: $base-space * 3;
 
-	header {
+	.a-card--header {
+		padding: $base-space * 3;
+		position: relative;
+
 		p {
 			margin: 0;
+		}
+
+		.actions {
+			position: absolute;
+			margin-top: -10px;
+			right: $base-space * 3;
+			top: 50%;
+
+			a {
+				color: $color-card-action;
+				float: left;
+
+				&:hover {
+					color: $color-card-action-hover;
+				}
+
+				& + a {
+					margin-left: 5px;
+				}
+			}
+
+			i {
+				font-size: $fs-14;
+				vertical-align: middle;
+			}
 		}
 	}
 }
