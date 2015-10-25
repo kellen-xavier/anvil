@@ -1,4 +1,4 @@
-// Set base font-size 
+// Set base font-size
 html {
     font-size: $base-fs;
 }
@@ -16,19 +16,19 @@ html {
 /* General classes */
 // Space
 .space--up {
-	margin-top: $base-space * 2;
+	margin-top: $base-space * 4;
 }
 
 .space--down {
-	margin-bottom: $base-space * 2;
+	margin-bottom: $base-space * 4;
 }
 
 .space--left {
-	margin-left: $base-space * 2;
+	margin-left: $base-space * 4;
 }
 
 .space-right {
-	margin-right: $base-space * 2;
+	margin-right: $base-space * 4;
 }
 // Width
 .half {
