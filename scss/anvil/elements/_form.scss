@@ -87,14 +87,14 @@
             cursor: pointer;
             display: initial;
             font-size: $fs-14;
-            margin-left: 25px;
+            margin-left: 20px;
             user-select: none;
             vertical-align: middle;
 
             &:before {
                 border-radius: 3px;
-                border: 2px solid $border-input;
-                border-bottom-width: 3px;
+                border: 1px solid $border-input;
+                border-bottom-width: 2px;
                 content: "";
                 left: 0;
                 position: absolute;
@@ -159,14 +159,14 @@
                 background: $color-radio-checked;
                 border-radius: 100%;
                 content: "";
-                padding: 7px;
+                padding: 5px;
                 position: absolute;
-                left: 4px;
-                top: 4px;
+                left: 5px;
+                top: 5px;
                 transform: scale(1);
             }
         }
-        
+
         &:disabled+label {
             &:after {
                 background: $color-radio-disabled;

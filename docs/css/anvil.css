@@ -587,7 +587,7 @@ html {
       cursor: pointer;
       display: initial;
       font-size: 0.875em;
-      margin-left: 25px;
+      margin-left: 20px;
       user-select: none;
       vertical-align: middle; }
       .a-input--radio input[type=radio] + label:before,
@@ -595,8 +595,8 @@ html {
       .a-input--checkbox input[type=radio] + label:before,
       .a-input--checkbox input[type=checkbox] + label:before {
         border-radius: 3px;
-        border: 2px solid #e6e6e6;
-        border-bottom-width: 3px;
+        border: 1px solid #e6e6e6;
+        border-bottom-width: 2px;
         content: "";
         left: 0;
         position: absolute;
@@ -658,10 +658,10 @@ html {
     background: #0B87C6;
     border-radius: 100%;
     content: "";
-    padding: 7px;
+    padding: 5px;
     position: absolute;
-    left: 4px;
-    top: 4px;
+    left: 5px;
+    top: 5px;
     transform: scale(1); }
   .a-input--radio input[type=radio]:disabled + label:after,
   .a-input--checkbox input[type=radio]:disabled + label:after {
