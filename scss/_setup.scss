@@ -4,7 +4,7 @@
 /* Base Color */
     $base-color: #fff; // Extremely recommended to let this white
     $primary-color: #0B87C6;
-    $info-color: #9ED0FF;
+    $info-color: #73B1DE;
     $success-color: #64A742;
     $warning-color: #FFD846;
     $danger-color: #DE5252;
@@ -12,10 +12,10 @@
 /* Alerts */
     // Backgrounds
     $background-alert: $base-color;
-    $background-alert-info: lighten($info-color, 10);
-    $background-alert-success: lighten($success-color, 10);
-    $background-alert-warning: lighten($warning-color, 10);
-    $background-alert-danger: lighten($danger-color, 10);
+    $background-alert-info: lighten($info-color, 25);
+    $background-alert-success: lighten($success-color, 15);
+    $background-alert-warning: lighten($warning-color, 20);
+    $background-alert-danger: lighten($danger-color, 20);
     // Border
     $border-alert: darken($base-color, 10);
     $border-alert-info: $info-color;
@@ -24,10 +24,10 @@
     $border-alert-danger: $danger-color;
     // Color
     $color-alert: darken($base-color, 25);
-    $color-alert-info: darken($info-color, 25);
+    $color-alert-info: darken($info-color, 20);
     $color-alert-success: darken($success-color, 25);
-    $color-alert-warning: darken($warning-color, 25);
-    $color-alert-danger: darken($danger-color, 25);
+    $color-alert-warning: darken($warning-color, 35);
+    $color-alert-danger: darken($danger-color, 30);
 
 /* Card */
     // Backgrounds

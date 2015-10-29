@@ -492,24 +492,24 @@ html {
   width: 100%; }
 
 .a-alert--info {
-  background: #d1e9ff;
-  border-color: #9ED0FF;
-  color: #1f92ff; }
+  background: #daeaf6;
+  border-color: #73B1DE;
+  color: #2d81be; }
 
 .a-alert--success {
-  background: #7ebf5d;
+  background: #8dc66f;
   border-color: #64A742;
   color: #2d4c1e; }
 
 .a-alert--warning {
-  background: #ffe379;
+  background: #ffeeac;
   border-color: #FFD846;
-  color: #c59c00; }
+  color: #927400; }
 
 .a-alert--danger {
-  background: #e67d7d;
+  background: #eea8a8;
   border-color: #DE5252;
-  color: #941c1c; }
+  color: #7f1818; }
 
 .a-card {
   background: #fff;
