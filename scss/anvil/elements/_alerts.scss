@@ -1,0 +1,37 @@
+.alert {
+	background: white;
+	border: 1px solid $border-alert;
+	color: $color-alert;
+	margin-bottom: $base-space * 2;
+	padding: $base-space * 3;
+	text-align: center;
+	width: 100%;
+}
+
+.alert--info {
+	@extend .alert;
+	background: $background-alert-info;
+	border-color: $border-alert-info;
+	color: $color-alert-info;
+}
+
+.alert--success {
+	@extend .alert;
+	background: $background-alert-success;
+	border-color: $border-alert-success;
+	color: $color-alert-success;
+}
+
+.alert--warning {
+	@extend .alert;
+	background: $background-alert-warning;
+	border-color: $border-alert-warning;
+	color: $color-alert-warning;
+}
+
+.alert--danger {
+	@extend .alert;
+	background: $background-alert-danger;
+	border-color: $border-alert-danger;
+	color: $color-alert-danger;
+}

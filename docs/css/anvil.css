@@ -16,6 +16,7 @@
 -------------*/
 /* Spaces */
 /* Base Color */
+/* Alerts */
 /* Card */
 /* Form */
 /* Background */
@@ -483,6 +484,35 @@ html {
   .a-sidebar ul li:hover {
     background: rgba(255, 255, 255, 0.05); }
 
+.alert, .alert--info, .alert--success, .alert--warning, .alert--danger {
+  background: white;
+  border: 1px solid #e6e6e6;
+  color: #bfbfbf;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 100%; }
+
+.alert--info {
+  background: #d1e9ff;
+  border-color: #9ED0FF;
+  color: #1f92ff; }
+
+.alert--success {
+  background: #7ebf5d;
+  border-color: #64A742;
+  color: #2d4c1e; }
+
+.alert--warning {
+  background: #ffe379;
+  border-color: #FFD846;
+  color: #c59c00; }
+
+.alert--danger {
+  background: #e67d7d;
+  border-color: #DE5252;
+  color: #941c1c; }
+
 .a-card {
   background: #fff;
   border: 1px solid #e6e6e6;
@@ -532,7 +562,7 @@ html {
   .a-input label, .a-input--radio label,
   .a-input--checkbox label, .a-input--error label {
     border-bottom: 1px solid #e6e6e6;
-    color: #aaa;
+    color: #a6a6a6;
     display: block;
     font-size: 0.75em;
     padding: 5px 10px; }
@@ -563,7 +593,7 @@ html {
     .a-input .a-addon i, .a-input--radio .a-addon i,
     .a-input--checkbox .a-addon i, .a-input--error .a-addon i {
       background: #f2f2f2;
-      color: #aaa;
+      color: #a6a6a6;
       cursor: default;
       display: table-cell;
       font-style: normal;
@@ -775,7 +805,7 @@ html {
   border-color: #ffcd13; }
   .a-button .a-button--warning b,
   .a-button .a-button--warning a {
-    color: #444; }
+    color: #595959; }
   .a-button .a-button--warning b, .a-button .a-button--warning:hover {
     background: #ffdd5f;
     border-color: #ffcd13; }

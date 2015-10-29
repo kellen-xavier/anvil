@@ -4,9 +4,30 @@
 /* Base Color */
     $base-color: #fff; // Extremely recommended to let this white
     $primary-color: #0B87C6;
+    $info-color: #9ED0FF;
     $success-color: #64A742;
     $warning-color: #FFD846;
     $danger-color: #DE5252;
+
+/* Alerts */
+    // Backgrounds
+    $background-alert: $base-color;
+    $background-alert-info: lighten($info-color, 10);
+    $background-alert-success: lighten($success-color, 10);
+    $background-alert-warning: lighten($warning-color, 10);
+    $background-alert-danger: lighten($danger-color, 10);
+    // Border
+    $border-alert: darken($base-color, 10);
+    $border-alert-info: $info-color;
+    $border-alert-success: $success-color;
+    $border-alert-warning: $warning-color;
+    $border-alert-danger: $danger-color;
+    // Color
+    $color-alert: darken($base-color, 25);
+    $color-alert-info: darken($info-color, 25);
+    $color-alert-success: darken($success-color, 25);
+    $color-alert-warning: darken($warning-color, 25);
+    $color-alert-danger: darken($danger-color, 25);
 
 /* Card */
     // Backgrounds
@@ -82,17 +103,17 @@
         $color-radio-checked: $primary-color;
         $color-radio-disabled: darken($base-color, 35);
         // Label
-        $color-label: #aaa;
+        $color-label: darken($base-color, 35);
         // Addon
         $color-addon: $color-label;
         $color-addon-error: $danger-color;
         // Button
         $color-button: $color-input;
         $color-button-link-hover: $primary-color;
-        $color-button-primary: #fff;
-        $color-button-success: #fff;
-        $color-button-warning: #444;
-        $color-button-danger: #fff;
+        $color-button-primary: $base-color;
+        $color-button-success: $base-color;
+        $color-button-warning: darken($base-color, 65);
+        $color-button-danger: $base-color;
 
 /* Highlights */
     $general-highlight: rgba(white, .05);
