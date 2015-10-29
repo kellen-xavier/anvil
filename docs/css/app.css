@@ -12,6 +12,7 @@
     background: #56504B;
     display: flex;
     float: left;
+    height: 80px;
     max-height: 100%;
     width: 20%;
 }

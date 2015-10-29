@@ -601,7 +601,7 @@ html {
       text-align: center;
       user-select: none;
       vertical-align: middle;
-      width: 5%; }
+      width: 12%; }
     .a-input .a-addon + input, .a-input--radio .a-addon + input,
     .a-input--checkbox .a-addon + input, .a-input--error .a-addon + input {
       border-left: 1px solid #e6e6e6; }
