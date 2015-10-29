@@ -484,7 +484,7 @@ html {
   .a-sidebar ul li:hover {
     background: rgba(255, 255, 255, 0.05); }
 
-.alert, .alert--info, .alert--success, .alert--warning, .alert--danger {
+.a-alert, .a-alert--info, .a-alert--success, .a-alert--warning, .a-alert--danger {
   background: white;
   border: 1px solid #e6e6e6;
   color: #bfbfbf;
@@ -492,22 +492,22 @@ html {
   text-align: center;
   width: 100%; }
 
-.alert--info {
+.a-alert--info {
   background: #d1e9ff;
   border-color: #9ED0FF;
   color: #1f92ff; }
 
-.alert--success {
+.a-alert--success {
   background: #7ebf5d;
   border-color: #64A742;
   color: #2d4c1e; }
 
-.alert--warning {
+.a-alert--warning {
   background: #ffe379;
   border-color: #FFD846;
   color: #c59c00; }
 
-.alert--danger {
+.a-alert--danger {
   background: #e67d7d;
   border-color: #DE5252;
   color: #941c1c; }
