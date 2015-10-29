@@ -490,6 +490,8 @@ html {
   color: #bfbfbf;
   padding: 15px;
   width: 100%; }
+  .a-alert p, .a-alert--info p, .a-alert--success p, .a-alert--warning p, .a-alert--danger p {
+    margin: 0; }
 
 .a-alert--info {
   background: #daeaf6;

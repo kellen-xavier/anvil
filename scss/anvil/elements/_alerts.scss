@@ -4,6 +4,10 @@
 	color: $color-alert;
 	padding: $base-space * 3;
 	width: 100%;
+
+	p {
+		margin: 0;
+	}
 }
 
 .a-alert--info {
