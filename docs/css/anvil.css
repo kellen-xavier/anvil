@@ -625,8 +625,10 @@ html {
       color: #0B87C6;
       font-family: FontAwesome;
       font-weight: bold;
-      padding: 2px;
+      left: 0;
+      padding: 3px;
       position: absolute;
+      top: 0;
       transform: scale(1); }
     .a-input--radio input[type=radio]:disabled + label,
     .a-input--radio input[type=checkbox]:disabled + label,

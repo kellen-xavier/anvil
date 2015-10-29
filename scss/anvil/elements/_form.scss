@@ -121,8 +121,10 @@
                 color: $color-checkbox-checked;
                 font-family: FontAwesome;
                 font-weight: bold;
-                padding: 2px;
+                left: 0;
+                padding: 3px;
                 position: absolute;
+                top: 0;
                 transform: scale(1);
             }
         }
