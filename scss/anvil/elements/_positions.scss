@@ -1,25 +1,25 @@
 // Fixed
-.a-fixed {
+.fixed {
     position: fixed;
 }
 
-.a-fixed--top {
-    @extend .a-fixed;
+.fixed--top {
+    @extend .fixed;
     top: 0;
 }
 
-.a-fixed--bottom {
-    @extend .a-fixed;
+.fixed--bottom {
+    @extend .fixed;
     bottom: 0;
 }
 
-.a-fixed--left {
-    @extend .a-fixed;
+.fixed--left {
+    @extend .fixed;
     left: 0;
 }
 
-.a-fixed--right {
-    @extend .a-fixed;
+.fixed--right {
+    @extend .fixed;
     right: 0;
 }
 

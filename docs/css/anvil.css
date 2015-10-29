@@ -446,19 +446,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #777; }
 
-.a-fixed, .a-fixed--top, .a-fixed--bottom, .a-fixed--left, .a-fixed--right {
+.fixed, .fixed--top, .fixed--bottom, .fixed--left, .fixed--right {
   position: fixed; }
 
-.a-fixed--top {
+.fixed--top {
   top: 0; }
 
-.a-fixed--bottom {
+.fixed--bottom {
   bottom: 0; }
 
-.a-fixed--left {
+.fixed--left {
   left: 0; }
 
-.a-fixed--right {
+.fixed--right {
   right: 0; }
 
 /* Floats */
