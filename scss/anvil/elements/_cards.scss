@@ -1,6 +1,7 @@
 .a-card {
 	background: $background-card;
 	border: 1px solid $border-card;
+	position: relative;
 
 	.a-card--header {
 		padding: $base-space * 3;

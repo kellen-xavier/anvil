@@ -7,7 +7,6 @@
     background: $background-input;
     border: 1px solid $border-input;
     border-bottom-width: 2px;
-    display: inline-table;
     position: relative;
     vertical-align: middle;
     transition: background .15s ease;
@@ -26,14 +25,12 @@
     }
 
     input {
-        transition: background .25s ease;
         background: transparent;
         border: none;
         box-shadow: none;
         color: $color-input;
-        display: table-cell;
-        float: left;
         padding: ($base-space * 2);
+        transition: background .25s ease;
         width: 100%;
 
         &:focus,
@@ -72,7 +69,110 @@
             border-left: 1px solid $border-addon;
         }
     }
+}
 
+.a-input--radio,
+.a-input--checkbox {
+    @extend .a-input;
+    background: transparent;
+    border: none;
+
+    input[type=radio],
+    input[type=checkbox] {
+        display: none;
+
+        & + label {
+            border: none;
+            color: $color-input;
+            cursor: pointer;
+            display: initial;
+            font-size: $fs-14;
+            margin-left: 25px;
+            user-select: none;
+            vertical-align: middle;
+
+            &:before {
+                border-radius: 3px;
+                border: 2px solid $border-input;
+                border-bottom-width: 3px;
+                content: "";
+                left: 0;
+                position: absolute;
+                height: 18px;
+                width: 18px;
+            }
+
+            &:after {
+                transition: all .25s;
+                content: "\0020";
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                transform: scale(0);
+            }
+
+            &:hover:before {
+                background: $background-input-hover;
+            }
+        }
+        &:checked+label {
+            &:after {
+                content: "\f00c";
+                color: $color-checkbox-checked;
+                font-family: FontAwesome;
+                font-weight: bold;
+                padding: 2px;
+                position: absolute;
+                transform: scale(1);
+            }
+        }
+        &:disabled+label {
+            color: $color-checkbox-disabled;
+
+            &:before {
+                background: $background-checkbox-disabled;
+            }
+
+            &:after {
+                color: $color-checkbox-disabled;
+            }
+        }
+    }
+
+    input[type=radio] {
+        & + label {
+            &:before {
+                border-radius: 100%;
+            }
+
+            &:after {
+                content: "\0020";
+                position: absolute;
+                left: 8px;
+                top: 10px;
+                transform: scale(0);
+            }
+        }
+
+        &:checked+label {
+            &:after {
+                background: $color-radio-checked;
+                border-radius: 100%;
+                content: "";
+                padding: 7px;
+                position: absolute;
+                left: 4px;
+                top: 4px;
+                transform: scale(1);
+            }
+        }
+        
+        &:disabled+label {
+            &:after {
+                background: $color-radio-disabled;
+            }
+        }
+    }
 }
 
 .a-input--error {

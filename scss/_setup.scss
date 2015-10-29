@@ -25,6 +25,9 @@
         $background-input-disabled: $background-input-hover;
         $background-input-error: lighten($danger-color, 38);
         $background-input-error-message: $danger-color;
+        // Checkbox
+        $background-checkbox: $base-color;
+        $background-checkbox-disabled: darken($background-checkbox, 5);
         // Addon
         $background-addon: darken($background-input, 5);
         $background-addon-error: $background-input-error;
@@ -69,10 +72,15 @@
     /* Color */
         // Input
         $color-input: darken($base-color, 50);
-        $color-input-disabled: darken($base-color, 25);
+        $color-input-disabled: lighten($color-input, 25);
         $color-input-error: $danger-color;
         $color-input-error-message: $base-color;
         $color-input-placeholder: $color-input-disabled;
+        // Checkbox & Radios
+        $color-checkbox-checked: $primary-color;
+        $color-checkbox-disabled: darken($base-color, 35);
+        $color-radio-checked: $primary-color;
+        $color-radio-disabled: darken($base-color, 35);
         // Label
         $color-label: #aaa;
         // Addon
