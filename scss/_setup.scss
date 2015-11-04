@@ -17,13 +17,13 @@
     $background-alert-warning: lighten($warning-color, 20);
     $background-alert-danger: lighten($danger-color, 20);
     // Border
-    $border-alert: darken($base-color, 10);
+    $border-alert: darken($base-color, 20);
     $border-alert-info: $info-color;
     $border-alert-success: $success-color;
     $border-alert-warning: $warning-color;
     $border-alert-danger: $danger-color;
     // Color
-    $color-alert: darken($base-color, 25);
+    $color-alert: darken($base-color, 35);
     $color-alert-info: darken($info-color, 20);
     $color-alert-success: darken($success-color, 25);
     $color-alert-warning: darken($warning-color, 35);

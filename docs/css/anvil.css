@@ -407,6 +407,9 @@ html {
 .space-right {
   margin-right: 20px; }
 
+.quarter {
+  width: 25%; }
+
 .half {
   width: 50%; }
 
@@ -486,8 +489,8 @@ html {
 
 .a-alert, .a-alert--info, .a-alert--success, .a-alert--warning, .a-alert--danger {
   background: white;
-  border: 1px solid #e6e6e6;
-  color: #bfbfbf;
+  border: 1px solid #cccccc;
+  color: #a6a6a6;
   padding: 15px;
   width: 100%; }
   .a-alert p, .a-alert--info p, .a-alert--success p, .a-alert--warning p, .a-alert--danger p {
@@ -813,5 +816,38 @@ html {
       border-color: #ffdd5f; }
   .a-button .a-button--warning.a-button--flat {
     border-color: #FFD846; }
+
+.a-table, .a-table--striped, .a-table--bordered, .a-table--hover {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.875em;
+  max-width: 100%;
+  position: relative;
+  width: 100%; }
+  .a-table thead tr, .a-table--striped thead tr, .a-table--bordered thead tr, .a-table--hover thead tr {
+    background: #fff;
+    border-bottom: 2px solid #ccc; }
+    .a-table thead tr th, .a-table--striped thead tr th, .a-table--bordered thead tr th, .a-table--hover thead tr th {
+      padding: 15px 20px;
+      text-align: left;
+      vertical-align: middle; }
+  .a-table tbody tr, .a-table--striped tbody tr, .a-table--bordered tbody tr, .a-table--hover tbody tr {
+    background: #fff;
+    border-top: 1px solid #ddd; }
+    .a-table tbody tr td, .a-table--striped tbody tr td, .a-table--bordered tbody tr td, .a-table--hover tbody tr td {
+      padding: 15px 20px;
+      vertical-align: middle; }
+
+.a-table--striped tbody tr:nth-child(odd) {
+  background: #f6f6f6; }
+
+.a-table--bordered thead tr th {
+  border: 1px solid #ddd; }
+.a-table--bordered tbody tr td {
+  border: 1px solid #ddd; }
+
+.a-table--hover tbody tr:hover {
+  background: #eee; }
 
 /*# sourceMappingURL=anvil.css.map */

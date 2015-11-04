@@ -30,7 +30,12 @@ html {
 .space-right {
 	margin-right: $base-space * 4;
 }
-// Width
+
+// Width Control
+.quarter {
+	width: 25%;
+}
+
 .half {
 	width: 50%;
 }
