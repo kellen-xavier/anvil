@@ -1,5 +1,4 @@
 .a-table {
-	border: 1px solid #ddd;
 	border-collapse: collapse;
 	border-spacing: 0;
 	font-size: $fs-14;
@@ -9,11 +8,11 @@
 
 	thead {
 		tr {
-			background: #fff;
-			border-bottom: 2px solid #ccc;
+			background: $background-table;
+			border-bottom: 2px solid $border-table-header;
 
 			th {
-				padding: 15px 20px;
+				padding: ($base-space * 3) ($base-space * 4);
 				text-align: left;
 				vertical-align: middle;
 			}
@@ -22,11 +21,11 @@
 
 	tbody {
 		tr {
-			background: #fff;
-			border-top: 1px solid #ddd;
+			background: $background-table;
+			border-top: 1px solid $border-table;
 
 			td {
-				padding: 15px 20px;
+				padding: ($base-space * 3) ($base-space * 4);
 				vertical-align: middle;
 			}
 		}
@@ -38,7 +37,7 @@
 
 	tbody {
 		tr:nth-child(odd) {
-			background: #f6f6f6;
+			background: $background-table-striped;
 		}
 	}
 }
@@ -49,7 +48,7 @@
 	thead {
 		tr {
 			th {
-				border: 1px solid #ddd;
+				border: 1px solid $border-table;
 			}
 		}
 	}
@@ -57,7 +56,7 @@
 	tbody {
 		tr {
 			td {
-				border: 1px solid #ddd;
+				border: 1px solid $border-table;
 			}
 		}
 	}
@@ -68,7 +67,12 @@
 
 	tbody {
 		tr:hover {
-			background: #eee;
+			background: $background-table-hover;
 		}
 	}
+}
+
+.a-table--framed {
+	@extend .a-table;
+	border: 1px solid $border-table;
 }

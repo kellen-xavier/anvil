@@ -115,6 +115,15 @@
         $color-button-warning: darken($base-color, 65);
         $color-button-danger: $base-color;
 
+/* Table */
+    // Backgrounds
+    $background-table: $base-color;
+    $background-table-striped: darken($base-color, 5);
+    $background-table-hover: darken($base-color, 10);
+    // Borders
+    $border-table: darken($base-color, 15);
+    $border-table-header: darken($base-color, 20);
+    
 /* Highlights */
     $general-highlight: rgba(white, .05);
     $sidebar-highlight: $general-highlight;
