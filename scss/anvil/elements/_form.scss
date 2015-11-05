@@ -236,6 +236,10 @@
         &.a-button--flat {
             border-color: $background-button-hover;
         }
+
+        a {
+            color: $color-button;
+        }
     }
 
     &.circle {
@@ -296,6 +300,10 @@
         &.a-button--flat {
             border-color: $background-button-primary-hover;
         }
+
+        a {
+            color: $color-button-primary;
+        }
     }
 
     &.a-button--flat {
@@ -320,6 +328,10 @@
 
         &.a-button--flat {
             border-color: $background-button-success-hover;
+        }
+
+        a {
+            color: $color-button-success;
         }
     }
 
@@ -346,6 +358,10 @@
         &.a-button--flat {
             border-color: $background-button-danger-hover;
         }
+
+        a {
+            color: $color-button-danger;
+        }
     }
 
     &.a-button--flat {
@@ -370,6 +386,10 @@
 
         &.a-button--flat {
             border-color: $background-button-warning-hover;
+        }
+
+        a {
+            color: $color-button-warning;
         }
     }
 
