@@ -34,6 +34,20 @@
 			}
 		}
 	}
+
+	tfoot {
+		tr {
+			background: $background-table;
+			border-top: 2px solid $border-table-footer;
+
+			td {
+				color: $color-table-footer;
+				font-size: $fs-12;
+				padding: ($base-space) ($base-space * 4);
+				text-transform: uppercase;
+			}
+		}
+	}
 }
 
 .a-table--striped {

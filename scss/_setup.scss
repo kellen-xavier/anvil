@@ -139,6 +139,9 @@
     // Borders
     $border-table: darken($base-color, 15);
     $border-table-header: darken($base-color, 20);
+    $border-table-footer: $border-table-header;
+    // Colors
+    $color-table-footer: darken($base-color, 35);
     
 /* Highlights */
     $general-highlight: rgba(white, .05);
