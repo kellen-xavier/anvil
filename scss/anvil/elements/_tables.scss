@@ -36,7 +36,7 @@
 	@extend .a-table;
 
 	tbody {
-		tr:nth-child(odd) {
+		tr:nth-child(even) {
 			background: $background-table-striped;
 		}
 	}
@@ -62,7 +62,7 @@
 	}
 }
 
-.a-table--hover {
+.a-table--hovered {
 	@extend .a-table;
 
 	tbody {

@@ -843,28 +843,28 @@ html {
     padding: 5px 10px;
     text-transform: uppercase; }
 
-.a-table, .a-table--striped, .a-table--bordered, .a-table--hover, .a-table--framed {
+.a-table, .a-table--striped, .a-table--bordered, .a-table--hovered, .a-table--framed {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 0.875em;
   max-width: 100%;
   position: relative;
   width: 100%; }
-  .a-table thead tr, .a-table--striped thead tr, .a-table--bordered thead tr, .a-table--hover thead tr, .a-table--framed thead tr {
+  .a-table thead tr, .a-table--striped thead tr, .a-table--bordered thead tr, .a-table--hovered thead tr, .a-table--framed thead tr {
     background: #fff;
     border-bottom: 2px solid #cccccc; }
-    .a-table thead tr th, .a-table--striped thead tr th, .a-table--bordered thead tr th, .a-table--hover thead tr th, .a-table--framed thead tr th {
+    .a-table thead tr th, .a-table--striped thead tr th, .a-table--bordered thead tr th, .a-table--hovered thead tr th, .a-table--framed thead tr th {
       padding: 15px 20px;
       text-align: left;
       vertical-align: middle; }
-  .a-table tbody tr, .a-table--striped tbody tr, .a-table--bordered tbody tr, .a-table--hover tbody tr, .a-table--framed tbody tr {
+  .a-table tbody tr, .a-table--striped tbody tr, .a-table--bordered tbody tr, .a-table--hovered tbody tr, .a-table--framed tbody tr {
     background: #fff;
     border-top: 1px solid #d9d9d9; }
-    .a-table tbody tr td, .a-table--striped tbody tr td, .a-table--bordered tbody tr td, .a-table--hover tbody tr td, .a-table--framed tbody tr td {
+    .a-table tbody tr td, .a-table--striped tbody tr td, .a-table--bordered tbody tr td, .a-table--hovered tbody tr td, .a-table--framed tbody tr td {
       padding: 15px 20px;
       vertical-align: middle; }
 
-.a-table--striped tbody tr:nth-child(odd) {
+.a-table--striped tbody tr:nth-child(even) {
   background: #f2f2f2; }
 
 .a-table--bordered thead tr th {
@@ -872,7 +872,7 @@ html {
 .a-table--bordered tbody tr td {
   border: 1px solid #d9d9d9; }
 
-.a-table--hover tbody tr:hover {
+.a-table--hovered tbody tr:hover {
   background: #e6e6e6; }
 
 .a-table--framed {
