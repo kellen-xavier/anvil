@@ -532,12 +532,12 @@ html {
     text-decoration: none; }
   .a-button + .a-button, .a-button--label + .a-button, .a-button--link + .a-button, .a-button--primary + .a-button, .a-button--success + .a-button, .a-button--danger + .a-button, .a-button--warning + .a-button, .a-button + .a-button--label, .a-button--label + .a-button--label, .a-button--link + .a-button--label, .a-button--primary + .a-button--label, .a-button--success + .a-button--label, .a-button--danger + .a-button--label, .a-button--warning + .a-button--label, .a-button + .a-button--link, .a-button--label + .a-button--link, .a-button--link + .a-button--link, .a-button--primary + .a-button--link, .a-button--success + .a-button--link, .a-button--danger + .a-button--link, .a-button--warning + .a-button--link, .a-button + .a-button--primary, .a-button--label + .a-button--primary, .a-button--link + .a-button--primary, .a-button--primary + .a-button--primary, .a-button--success + .a-button--primary, .a-button--danger + .a-button--primary, .a-button--warning + .a-button--primary, .a-button + .a-button--success, .a-button--label + .a-button--success, .a-button--link + .a-button--success, .a-button--primary + .a-button--success, .a-button--success + .a-button--success, .a-button--danger + .a-button--success, .a-button--warning + .a-button--success, .a-button + .a-button--danger, .a-button--label + .a-button--danger, .a-button--link + .a-button--danger, .a-button--primary + .a-button--danger, .a-button--success + .a-button--danger, .a-button--danger + .a-button--danger, .a-button--warning + .a-button--danger, .a-button + .a-button--warning, .a-button--label + .a-button--warning, .a-button--link + .a-button--warning, .a-button--primary + .a-button--warning, .a-button--success + .a-button--warning, .a-button--danger + .a-button--warning, .a-button--warning + .a-button--warning {
     margin-left: 10px; }
-  .a-button b, .a-button--label b, .a-button--link b, .a-button--primary b, .a-button--success b, .a-button--danger b, .a-button--warning b, .a-button.open, .open.a-button--label, .open.a-button--link, .open.a-button--primary, .open.a-button--success, .open.a-button--danger, .open.a-button--warning, .a-button:hover, .a-button--label:hover, .a-button--link:hover, .a-button--primary:hover, .a-button--success:hover, .a-button--danger:hover, .a-button--warning:hover {
+  .a-button b, .a-button--label b, .a-button--link b, .a-button--primary b, .a-button--success b, .a-button--danger b, .a-button--warning b, .open .a-button.hover, .open .hover.a-button--label, .open .hover.a-button--link, .open .hover.a-button--primary, .open .hover.a-button--success, .open .hover.a-button--danger, .open .hover.a-button--warning, .a-button:hover, .a-button--label:hover, .a-button--link:hover, .a-button--primary:hover, .a-button--success:hover, .a-button--danger:hover, .a-button--warning:hover {
     background: #f2f2f2;
     border-color: #cccccc; }
-    .a-button b.a-button--flat, .a-button--label b.a-button--flat, .a-button--link b.a-button--flat, .a-button--primary b.a-button--flat, .a-button--success b.a-button--flat, .a-button--danger b.a-button--flat, .a-button--warning b.a-button--flat, .a-button.open.a-button--flat, .open.a-button--flat.a-button--label, .open.a-button--flat.a-button--link, .open.a-button--flat.a-button--primary, .open.a-button--flat.a-button--success, .open.a-button--flat.a-button--danger, .open.a-button--flat.a-button--warning, .a-button:hover.a-button--flat, .a-button--label:hover.a-button--flat, .a-button--link:hover.a-button--flat, .a-button--primary:hover.a-button--flat, .a-button--success:hover.a-button--flat, .a-button--danger:hover.a-button--flat, .a-button--warning:hover.a-button--flat {
+    .a-button b.a-button--flat, .a-button--label b.a-button--flat, .a-button--link b.a-button--flat, .a-button--primary b.a-button--flat, .a-button--success b.a-button--flat, .a-button--danger b.a-button--flat, .a-button--warning b.a-button--flat, .open .a-button.hover.a-button--flat, .open .hover.a-button--flat.a-button--label, .open .hover.a-button--flat.a-button--link, .open .hover.a-button--flat.a-button--primary, .open .hover.a-button--flat.a-button--success, .open .hover.a-button--flat.a-button--danger, .open .hover.a-button--flat.a-button--warning, .a-button:hover.a-button--flat, .a-button--label:hover.a-button--flat, .a-button--link:hover.a-button--flat, .a-button--primary:hover.a-button--flat, .a-button--success:hover.a-button--flat, .a-button--danger:hover.a-button--flat, .a-button--warning:hover.a-button--flat {
       border-color: #f2f2f2; }
-    .a-button b a, .a-button--label b a, .a-button--link b a, .a-button--primary b a, .a-button--success b a, .a-button--danger b a, .a-button--warning b a, .a-button.open a, .open.a-button--label a, .open.a-button--link a, .open.a-button--primary a, .open.a-button--success a, .open.a-button--danger a, .open.a-button--warning a, .a-button:hover a, .a-button--label:hover a, .a-button--link:hover a, .a-button--primary:hover a, .a-button--success:hover a, .a-button--danger:hover a, .a-button--warning:hover a {
+    .a-button b a, .a-button--label b a, .a-button--link b a, .a-button--primary b a, .a-button--success b a, .a-button--danger b a, .a-button--warning b a, .open .a-button.hover a, .open .hover.a-button--label a, .open .hover.a-button--link a, .open .hover.a-button--primary a, .open .hover.a-button--success a, .open .hover.a-button--danger a, .open .hover.a-button--warning a, .a-button:hover a, .a-button--label:hover a, .a-button--link:hover a, .a-button--primary:hover a, .a-button--success:hover a, .a-button--danger:hover a, .a-button--warning:hover a {
       color: gray; }
   .a-button.circle a, .circle.a-button--label a, .circle.a-button--link a, .circle.a-button--primary a, .circle.a-button--success a, .circle.a-button--danger a, .circle.a-button--warning a {
     padding: 10px; }
@@ -564,9 +564,9 @@ html {
 .a-button--link {
   background: transparent;
   border: none; }
-  .a-button--link.open, .a-button--link:hover {
+  .open .a-button--link.hover, .a-button--link:hover {
     background: transparent; }
-    .a-button--link.open a, .a-button--link:hover a {
+    .open .a-button--link.hover a, .a-button--link:hover a {
       color: #0B87C6; }
 
 .a-button--primary {
@@ -575,12 +575,12 @@ html {
   .a-button--primary b,
   .a-button--primary a {
     color: #fff; }
-  .a-button--primary b, .a-button--primary.open, .a-button--primary:hover {
+  .a-button--primary b, .open .a-button--primary.hover, .a-button--primary:hover {
     background: #0c97de;
     border-color: #086696; }
-    .a-button--primary b.a-button--flat, .a-button--primary.open.a-button--flat, .a-button--primary:hover.a-button--flat {
+    .a-button--primary b.a-button--flat, .open .a-button--primary.hover.a-button--flat, .a-button--primary:hover.a-button--flat {
       border-color: #0c97de; }
-    .a-button--primary b a, .a-button--primary.open a, .a-button--primary:hover a {
+    .a-button--primary b a, .open .a-button--primary.hover a, .a-button--primary:hover a {
       color: #fff; }
   .a-button--primary.a-button--flat {
     border-color: #0B87C6; }
@@ -591,12 +591,12 @@ html {
   .a-button--success b,
   .a-button--success a {
     color: #fff; }
-  .a-button--success b, .a-button--success.open, .a-button--success:hover {
+  .a-button--success b, .open .a-button--success.hover, .a-button--success:hover {
     background: #6fb84b;
     border-color: #4e8234; }
-    .a-button--success b.a-button--flat, .a-button--success.open.a-button--flat, .a-button--success:hover.a-button--flat {
+    .a-button--success b.a-button--flat, .open .a-button--success.hover.a-button--flat, .a-button--success:hover.a-button--flat {
       border-color: #6fb84b; }
-    .a-button--success b a, .a-button--success.open a, .a-button--success:hover a {
+    .a-button--success b a, .open .a-button--success.hover a, .a-button--success:hover a {
       color: #fff; }
   .a-button--success.a-button--flat {
     border-color: #64A742; }
@@ -607,12 +607,12 @@ html {
   .a-button--danger b,
   .a-button--danger a {
     color: #fff; }
-  .a-button--danger b, .a-button--danger.open, .a-button--danger:hover {
+  .a-button--danger b, .open .a-button--danger.hover, .a-button--danger:hover {
     background: #e26767;
     border-color: #d42929; }
-    .a-button--danger b.a-button--flat, .a-button--danger.open.a-button--flat, .a-button--danger:hover.a-button--flat {
+    .a-button--danger b.a-button--flat, .open .a-button--danger.hover.a-button--flat, .a-button--danger:hover.a-button--flat {
       border-color: #e26767; }
-    .a-button--danger b a, .a-button--danger.open a, .a-button--danger:hover a {
+    .a-button--danger b a, .open .a-button--danger.hover a, .a-button--danger:hover a {
       color: #fff; }
   .a-button--danger.a-button--flat {
     border-color: #DE5252; }
@@ -623,12 +623,12 @@ html {
   .a-button--warning b,
   .a-button--warning a {
     color: #595959; }
-  .a-button--warning b, .a-button--warning.open, .a-button--warning:hover {
+  .a-button--warning b, .open .a-button--warning.hover, .a-button--warning:hover {
     background: #ffdd5f;
     border-color: #ffcd13; }
-    .a-button--warning b.a-button--flat, .a-button--warning.open.a-button--flat, .a-button--warning:hover.a-button--flat {
+    .a-button--warning b.a-button--flat, .open .a-button--warning.hover.a-button--flat, .a-button--warning:hover.a-button--flat {
       border-color: #ffdd5f; }
-    .a-button--warning b a, .a-button--warning.open a, .a-button--warning:hover a {
+    .a-button--warning b a, .open .a-button--warning.hover a, .a-button--warning:hover a {
       color: #595959; }
   .a-button--warning.a-button--flat {
     border-color: #FFD846; }

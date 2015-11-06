@@ -21,7 +21,7 @@
     }
 
     b,
-    &.open,
+    .open &.hover,
     &:hover {
         background: $background-button-hover;
         border-color: $border-button-hover;
@@ -79,7 +79,7 @@
     background: transparent;
     border: none;
 
-    &.open,
+    .open &.hover,
     &:hover {
         background: transparent;
 
@@ -100,7 +100,7 @@
     }
 
     b,
-    &.open,
+    .open &.hover,
     &:hover {
         background: $background-button-primary-hover;
         border-color: $border-button-primary-hover;
@@ -130,7 +130,7 @@
     }
 
     b,
-    &.open,
+    .open &.hover,
     &:hover {
         background: $background-button-success-hover;
         border-color: $border-button-success-hover;
@@ -160,7 +160,7 @@
     }
 
     b,
-    &.open,
+    .open &.hover,
     &:hover {
         background: $background-button-danger-hover;
         border-color: $border-button-danger-hover;
@@ -190,7 +190,7 @@
     }
 
     b,
-    &.open,
+    .open &.hover,
     &:hover {
         background: $background-button-warning-hover;
         border-color: $border-button-warning-hover;
