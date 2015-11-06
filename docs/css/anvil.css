@@ -893,6 +893,8 @@ html {
     .a-table tbody tr td, .a-table--striped tbody tr td, .a-table--bordered tbody tr td, .a-table--hovered tbody tr td, .a-table--framed tbody tr td {
       padding: 15px 20px;
       vertical-align: middle; }
+      .a-table tbody tr td .badge, .a-table--striped tbody tr td .badge, .a-table--bordered tbody tr td .badge, .a-table--hovered tbody tr td .badge, .a-table--framed tbody tr td .badge, .a-table tbody tr td .badge--primary, .a-table--striped tbody tr td .badge--primary, .a-table--bordered tbody tr td .badge--primary, .a-table--hovered tbody tr td .badge--primary, .a-table--framed tbody tr td .badge--primary, .a-table tbody tr td .badge--success, .a-table--striped tbody tr td .badge--success, .a-table--bordered tbody tr td .badge--success, .a-table--hovered tbody tr td .badge--success, .a-table--framed tbody tr td .badge--success, .a-table tbody tr td .badge--info, .a-table--striped tbody tr td .badge--info, .a-table--bordered tbody tr td .badge--info, .a-table--hovered tbody tr td .badge--info, .a-table--framed tbody tr td .badge--info, .a-table tbody tr td .badge--warning, .a-table--striped tbody tr td .badge--warning, .a-table--bordered tbody tr td .badge--warning, .a-table--hovered tbody tr td .badge--warning, .a-table--framed tbody tr td .badge--warning, .a-table tbody tr td .badge--danger, .a-table--striped tbody tr td .badge--danger, .a-table--bordered tbody tr td .badge--danger, .a-table--hovered tbody tr td .badge--danger, .a-table--framed tbody tr td .badge--danger {
+        display: inline-block; }
 
 .a-table--striped tbody tr:nth-child(even) {
   background: #f2f2f2; }

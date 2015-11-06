@@ -27,6 +27,10 @@
 			td {
 				padding: ($base-space * 3) ($base-space * 4);
 				vertical-align: middle;
+
+				.badge {
+					display: inline-block;
+				}
 			}
 		}
 	}
