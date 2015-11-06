@@ -17,6 +17,7 @@
 /* Spaces */
 /* Base Color */
 /* Alerts */
+/* Badges */
 /* Card */
 /* Form */
 /* Background */
@@ -431,6 +432,35 @@ html {
 
 .center {
   text-align: center; }
+
+.badge, .badge--primary, .badge--success, .badge--info, .badge--warning, .badge--danger {
+  background: #e6e6e6;
+  border-radius: 5px;
+  color: #b3b3b3;
+  font-size: 0.75em;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.badge--primary {
+  background: #0B87C6;
+  color: #fff; }
+
+.badge--success {
+  background: #64A742;
+  color: #223917; }
+
+.badge--info {
+  background: #73B1DE;
+  color: #236595; }
+
+.badge--warning {
+  background: #FFD846;
+  color: #463700; }
+
+.badge--danger {
+  background: #DE5252;
+  color: #7f1818; }
 
 ::-webkit-scrollbar {
   background: rgba(255, 255, 255, 0.05);

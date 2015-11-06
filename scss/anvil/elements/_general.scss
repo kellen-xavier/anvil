@@ -66,6 +66,47 @@ html {
 	text-align: center;
 }
 
+// Badges
+.badge {
+	background: $background-badge;
+	border-radius: 5px;
+	color: $color-badge;
+	font-size: $fs-12;
+	padding: ($base-space) ($base-space * 2);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.badge--primary {
+	@extend .badge;
+	background: $background-badge-primary;
+	color: $color-badge-primary;
+}
+
+.badge--success {
+	@extend .badge;
+	background: $background-badge-success;
+	color: $color-badge-success;
+}
+
+.badge--info {
+	@extend .badge;
+	background: $background-badge-info;
+	color: $color-badge-info;
+}
+
+.badge--warning {
+	@extend .badge;
+	background: $background-badge-warning;
+	color: $color-badge-warning;
+}
+
+.badge--danger {
+	@extend .badge;
+	background: $background-badge-danger;
+	color: $color-badge-danger;
+}
+
 // Scrollbar
 ::-webkit-scrollbar {
 	background: rgba(255,255,255,.05);
