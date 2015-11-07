@@ -77,7 +77,7 @@
     clear: both; 
 
     & + .a-input,
-    & + & {
+    & + & .a-input{
         margin-top: $base-space * 3;
     }
     .a-input {

@@ -815,7 +815,8 @@ html {
 .a-input--group {
   clear: both; }
   .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio,
-  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error, .a-input--group + .a-input--group {
+  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error, .a-input--group + .a-input--group .a-input, .a-input--group .a-input--group + .a-input--group .a-input, .a-input--group + .a-input--group .a-input--radio,
+  .a-input--group + .a-input--group .a-input--checkbox, .a-input--group + .a-input--group .a-input--error {
     margin-top: 15px; }
   .a-input--group .a-input, .a-input--group .a-input--radio,
   .a-input--group .a-input--checkbox, .a-input--group .a-input--error {
