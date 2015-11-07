@@ -77,16 +77,20 @@
     clear: both; 
 
     & + .a-input,
-    & + & .a-input{
+    & + & {
         margin-top: $base-space * 3;
     }
+
+    & + .a-input {
+        clear: both;
+    }
+
     .a-input {
         @extend .a-input;
         float: left;
         width: 47.5%;
 
         & + .a-input {
-            margin-top: 0;
             margin-left: 20px;
         }
     }

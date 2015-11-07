@@ -815,9 +815,11 @@ html {
 .a-input--group {
   clear: both; }
   .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio,
-  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error, .a-input--group + .a-input--group .a-input, .a-input--group .a-input--group + .a-input--group .a-input, .a-input--group + .a-input--group .a-input--radio,
-  .a-input--group + .a-input--group .a-input--checkbox, .a-input--group + .a-input--group .a-input--error {
+  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error, .a-input--group + .a-input--group {
     margin-top: 15px; }
+  .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio,
+  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error {
+    clear: both; }
   .a-input--group .a-input, .a-input--group .a-input--radio,
   .a-input--group .a-input--checkbox, .a-input--group .a-input--error {
     float: left;
@@ -830,7 +832,6 @@ html {
     .a-input--group .a-input--checkbox + .a-input--checkbox,
     .a-input--group .a-input--error + .a-input--checkbox, .a-input--group .a-input + .a-input--error, .a-input--group .a-input--radio + .a-input--error,
     .a-input--group .a-input--checkbox + .a-input--error, .a-input--group .a-input--error + .a-input--error {
-      margin-top: 0;
       margin-left: 20px; }
 
 .a-input--radio,
