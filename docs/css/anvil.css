@@ -812,28 +812,25 @@ html {
     .a-input--checkbox .a-addon + input, .a-input--error .a-addon + input {
       border-left: 1px solid #e6e6e6; }
 
-.a-input--group + .a-input
-.a-input--group + .a-input--group, .a-input--group .a-input--group + .a-input
-.a-input--group + .a-input--group, .a-input--group + .a-input--radio
-.a-input--group + .a-input--group,
-.a-input--group + .a-input--checkbox
-.a-input--group + .a-input--group, .a-input--group + .a-input--error
-.a-input--group + .a-input--group {
-  margin-top: 15px; }
-.a-input--group .a-input, .a-input--group .a-input--radio,
-.a-input--group .a-input--checkbox, .a-input--group .a-input--error {
-  float: left;
-  width: 47.5%; }
-  .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input,
-  .a-input--group .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input--group .a-input + .a-input--radio, .a-input--group .a-input--radio + .a-input--radio,
-  .a-input--group .a-input--checkbox + .a-input--radio, .a-input--group .a-input--error + .a-input--radio,
-  .a-input--group .a-input + .a-input--checkbox,
-  .a-input--group .a-input--radio + .a-input--checkbox,
-  .a-input--group .a-input--checkbox + .a-input--checkbox,
-  .a-input--group .a-input--error + .a-input--checkbox, .a-input--group .a-input + .a-input--error, .a-input--group .a-input--radio + .a-input--error,
-  .a-input--group .a-input--checkbox + .a-input--error, .a-input--group .a-input--error + .a-input--error {
-    margin-top: 0;
-    margin-left: 20px; }
+.a-input--group {
+  clear: both; }
+  .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio,
+  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error, .a-input--group + .a-input--group {
+    margin-top: 15px; }
+  .a-input--group .a-input, .a-input--group .a-input--radio,
+  .a-input--group .a-input--checkbox, .a-input--group .a-input--error {
+    float: left;
+    width: 47.5%; }
+    .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input,
+    .a-input--group .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input--group .a-input + .a-input--radio, .a-input--group .a-input--radio + .a-input--radio,
+    .a-input--group .a-input--checkbox + .a-input--radio, .a-input--group .a-input--error + .a-input--radio,
+    .a-input--group .a-input + .a-input--checkbox,
+    .a-input--group .a-input--radio + .a-input--checkbox,
+    .a-input--group .a-input--checkbox + .a-input--checkbox,
+    .a-input--group .a-input--error + .a-input--checkbox, .a-input--group .a-input + .a-input--error, .a-input--group .a-input--radio + .a-input--error,
+    .a-input--group .a-input--checkbox + .a-input--error, .a-input--group .a-input--error + .a-input--error {
+      margin-top: 0;
+      margin-left: 20px; }
 
 .a-input--radio,
 .a-input--checkbox {

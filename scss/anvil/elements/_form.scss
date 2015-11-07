@@ -74,7 +74,9 @@
 }
 
 .a-input--group {
-    & + .a-input
+    clear: both; 
+
+    & + .a-input,
     & + & {
         margin-top: $base-space * 3;
     }
