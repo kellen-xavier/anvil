@@ -107,6 +107,50 @@ html {
 	color: $color-badge-danger;
 }
 
+// Paginate
+.pagination {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		list-style: none;
+
+		span,
+		a {
+			background: $background-pagination;
+			border: 1px solid $border-pagination;
+			border-bottom-width: 2px;
+			color: $color-pagination;
+			padding: ($base-space) ($base-space * 2);
+			text-align: center;
+			text-decoration: none;
+
+			&:hover {
+				background: $background-pagination-hovered;
+			}
+		}
+
+		&.active {
+			span, 
+			a{
+				background: $background-pagination-active;
+				border-color: $border-pagination-active;
+				color: $color-pagination-active;				
+			}
+		}
+
+		&.disabled {
+			span, 
+			a{
+				background: $background-pagination-disabled;
+				color: $color-pagination-disabled;
+				cursor: default;
+			}
+		}
+	}
+}
 // Scrollbar
 ::-webkit-scrollbar {
 	background: rgba(255,255,255,.05);

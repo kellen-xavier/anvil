@@ -23,6 +23,7 @@
 /* Background */
 /* Border */
 /* Color */
+/* Pagination */
 /* Table */
 /* Highlights */
 /* Fonts */
@@ -448,7 +449,7 @@ html {
 
 .badge--success {
   background: #64A742;
-  color: #223917; }
+  color: #fff; }
 
 .badge--info {
   background: #73B1DE;
@@ -461,6 +462,36 @@ html {
 .badge--danger {
   background: #DE5252;
   color: #7f1818; }
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .pagination li {
+    display: inline-block;
+    list-style: none; }
+    .pagination li span,
+    .pagination li a {
+      background: #fff;
+      border: 1px solid #cccccc;
+      border-bottom-width: 2px;
+      color: gray;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none; }
+      .pagination li span:hover,
+      .pagination li a:hover {
+        background: #f2f2f2; }
+    .pagination li.active span,
+    .pagination li.active a {
+      background: #0B87C6;
+      border-color: #0B87C6;
+      color: #fff; }
+    .pagination li.disabled span,
+    .pagination li.disabled a {
+      background: #e6e6e6;
+      color: #b3b3b3;
+      cursor: default; }
 
 ::-webkit-scrollbar {
   background: rgba(255, 255, 255, 0.05);
@@ -895,6 +926,14 @@ html {
       vertical-align: middle; }
       .a-table tbody tr td .badge, .a-table--striped tbody tr td .badge, .a-table--bordered tbody tr td .badge, .a-table--hovered tbody tr td .badge, .a-table--framed tbody tr td .badge, .a-table tbody tr td .badge--primary, .a-table--striped tbody tr td .badge--primary, .a-table--bordered tbody tr td .badge--primary, .a-table--hovered tbody tr td .badge--primary, .a-table--framed tbody tr td .badge--primary, .a-table tbody tr td .badge--success, .a-table--striped tbody tr td .badge--success, .a-table--bordered tbody tr td .badge--success, .a-table--hovered tbody tr td .badge--success, .a-table--framed tbody tr td .badge--success, .a-table tbody tr td .badge--info, .a-table--striped tbody tr td .badge--info, .a-table--bordered tbody tr td .badge--info, .a-table--hovered tbody tr td .badge--info, .a-table--framed tbody tr td .badge--info, .a-table tbody tr td .badge--warning, .a-table--striped tbody tr td .badge--warning, .a-table--bordered tbody tr td .badge--warning, .a-table--hovered tbody tr td .badge--warning, .a-table--framed tbody tr td .badge--warning, .a-table tbody tr td .badge--danger, .a-table--striped tbody tr td .badge--danger, .a-table--bordered tbody tr td .badge--danger, .a-table--hovered tbody tr td .badge--danger, .a-table--framed tbody tr td .badge--danger {
         display: inline-block; }
+  .a-table tfoot tr, .a-table--striped tfoot tr, .a-table--bordered tfoot tr, .a-table--hovered tfoot tr, .a-table--framed tfoot tr {
+    background: #fff;
+    border-top: 2px solid #cccccc; }
+    .a-table tfoot tr td, .a-table--striped tfoot tr td, .a-table--bordered tfoot tr td, .a-table--hovered tfoot tr td, .a-table--framed tfoot tr td {
+      color: gray;
+      font-size: 0.75em;
+      padding: 5px 20px;
+      text-transform: uppercase; }
 
 .a-table--striped tbody tr:nth-child(even) {
   background: #f2f2f2; }

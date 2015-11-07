@@ -131,6 +131,20 @@
         $color-button-warning: darken($base-color, 65);
         $color-button-danger: $base-color;
 
+/* Pagination */
+    // Backgrounds 
+    $background-pagination: $base-color;
+    $background-pagination-active: $primary-color;
+    $background-pagination-hovered: darken($base-color, 5);
+    $background-pagination-disabled: darken($base-color, 10);
+    // Borders
+    $border-pagination: darken($base-color, 20);
+    $border-pagination-active: $background-pagination-active;
+    // Colors 
+    $color-pagination: darken($base-color, 50);
+    $color-pagination-active: $base-color;
+    $color-pagination-disabled: darken($base-color, 30);
+
 /* Table */
     // Backgrounds
     $background-table: $base-color;
