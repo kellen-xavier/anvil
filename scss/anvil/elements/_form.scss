@@ -12,6 +12,7 @@
     transition: background .15s ease;
     width: 100%;
 
+    & + .a-input--group,
     & + & {
         margin-top: $base-space * 3;
     }
@@ -24,6 +25,7 @@
         padding: $base-space ($base-space * 2);
     }
 
+    select,
     input {
         background: transparent;
         border: none;
@@ -67,6 +69,23 @@
 
         & + input {
             border-left: 1px solid $border-addon;
+        }
+    }
+}
+
+.a-input--group {
+    & + .a-input
+    & + & {
+        margin-top: $base-space * 3;
+    }
+    .a-input {
+        @extend .a-input;
+        float: left;
+        width: 47.5%;
+
+        & + .a-input {
+            margin-top: 0;
+            margin-left: 20px;
         }
     }
 }
