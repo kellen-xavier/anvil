@@ -75,7 +75,7 @@
 
 .a-input--group {
     clear: both; 
-    display: inline-block;
+    display: flex;
     width: 100%;
 
     & + .a-input + .a-input,
