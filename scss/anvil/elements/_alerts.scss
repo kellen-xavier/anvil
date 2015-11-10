@@ -12,6 +12,10 @@
 	ul {
 		margin: ($base-space * 2) 0;
 		padding-left: $base-space * 4;
+
+		li {
+			list-display: none;
+		}
 	}
 }
 
