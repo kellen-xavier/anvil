@@ -43,7 +43,7 @@
     $color-badge-info: darken($info-color, 30);
     $color-badge-success: $base-color;
     $color-badge-warning: darken($warning-color, 50);
-    $color-badge-danger: darken($danger-color, 30);
+    $color-badge-danger: $base-color;
 
 /* Card */
     // Backgrounds
