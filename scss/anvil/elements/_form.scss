@@ -50,6 +50,10 @@
         }
     }
 
+    select {
+        padding: ($base-space * 2) - 1;
+    }
+
     .a-addon {
         display: table;
         width: 100%;
