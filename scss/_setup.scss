@@ -40,7 +40,7 @@
     // Colors 
     $color-badge: darken($base-color, 30);
     $color-badge-primary: $base-color;
-    $color-badge-info: darken($info-color, 30);
+    $color-badge-info: $base-color;
     $color-badge-success: $base-color;
     $color-badge-warning: darken($warning-color, 50);
     $color-badge-danger: $base-color;
