@@ -25,7 +25,8 @@
         font-weight: bold;
         padding: $base-space ($base-space * 2);
     }
-
+    
+    textarea,
     select,
     input {
         background: transparent;
@@ -49,6 +50,10 @@
         & + .a-addon {
             border-left: 1px solid $border-addon;
         }
+    }
+
+    textarea {
+        max-width: 100%;
     }
 
     select {
