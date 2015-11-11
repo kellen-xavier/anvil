@@ -45,8 +45,8 @@
             color: $color-input-disabled;
         }
 
-        & + .a-addon {
-            border-left: 1px solid $border-addon;
+        & + i {
+            border-right: none;
         }
     }
 
@@ -77,10 +77,6 @@
             width: 12%;
 
             & + input {
-                border-left: none;
-            }
-
-            input + & {
                 border-left: none;
             }
         }
