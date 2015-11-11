@@ -78,7 +78,11 @@
         }
 
         & + input {
-            border-left: 1px solid $border-addon;
+            border-left: none;
+        }
+
+        input + & {
+            border-left: none;
         }
     }
 }
@@ -234,9 +238,9 @@
     }
 
     .a-addon {
-        border-color: $border-input-error;
         i {
             background: $background-addon-error;
+            border-color: $border-input-error;
             color: $color-addon-error;
         }
     }
