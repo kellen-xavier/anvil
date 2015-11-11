@@ -5,7 +5,6 @@
 
 .a-input {
     background: $background-input;
-    border: 1px solid $border-input;
     border-bottom-width: 2px;
     position: relative;
     vertical-align: middle;
@@ -18,19 +17,18 @@
     }
 
     label {
-        border-bottom: 1px solid $border-label;
         color: $color-label;
         display: block;
-        font-size: $fs-12;
+        font-size: $fs-14;
         font-weight: bold;
-        padding: $base-space ($base-space * 2);
+        padding-bottom: $base-space * 2;
     }
     
     textarea,
     select,
     input {
         background: transparent;
-        border: none;
+        border: 1px solid $border-input;
         box-shadow: none;
         color: $color-input;
         padding: ($base-space * 2);
@@ -115,6 +113,10 @@
     @extend .a-input;
     background: transparent;
     border: none;
+
+    label {
+        padding: $base-space ($base-space * 2);
+    }
 
     input[type=radio],
     input[type=checkbox] {
