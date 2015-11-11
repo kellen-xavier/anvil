@@ -5,7 +5,6 @@
 
 .a-input {
     background: $background-input;
-    border-bottom-width: 2px;
     position: relative;
     vertical-align: middle;
     transition: background .15s ease;
@@ -29,6 +28,7 @@
     input {
         background: transparent;
         border: 1px solid $border-input;
+        border-bottom-width: 2px;
         box-shadow: none;
         color: $color-input;
         padding: ($base-space * 2);
@@ -64,6 +64,8 @@
 
         i {
             background: $background-addon;
+            border: 1px solid $border-input;
+            border-bottom-width: 2px;
             color: $color-addon;
             cursor: default;
             display: table-cell;
@@ -220,9 +222,9 @@
 
 .a-input--error {
     @extend .a-input;
-    border-color: $border-input-error;
 
     input {
+     border-color: $border-input-error;
         color: $color-input-error;
 
         &:focus,
@@ -232,6 +234,7 @@
     }
 
     .a-addon {
+        border-color: $border-input-error;
         i {
             background: $background-addon-error;
             color: $color-addon-error;
