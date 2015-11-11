@@ -16,19 +16,19 @@ html {
 /* General classes */
 // Space
 .space--up {
-	margin-top: $base-space * 4;
+	margin-top: $base-space * 4 !important;
 }
 
 .space--down {
-	margin-bottom: $base-space * 4;
+	margin-bottom: $base-space * 4 !important;
 }
 
 .space--left {
-	margin-left: $base-space * 4;
+	margin-left: $base-space * 4 !important;
 }
 
 .space-right {
-	margin-right: $base-space * 4;
+	margin-right: $base-space * 4 !important;
 }
 
 // Width Control
