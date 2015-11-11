@@ -75,14 +75,14 @@
             user-select: none;
             vertical-align: middle;
             width: 12%;
-        }
 
-        & + input {
-            border-left: none;
-        }
+            & + input {
+                border-left: none;
+            }
 
-        input + & {
-            border-left: none;
+            input + & {
+                border-left: none;
+            }
         }
     }
 }
