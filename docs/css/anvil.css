@@ -453,7 +453,7 @@ html {
 
 .badge--info {
   background: #73B1DE;
-  color: #236595; }
+  color: #fff; }
 
 .badge--warning {
   background: #FFD846;
@@ -461,7 +461,7 @@ html {
 
 .badge--danger {
   background: #DE5252;
-  color: #7f1818; }
+  color: #fff; }
 
 .pagination {
   margin: 0;
@@ -558,6 +558,9 @@ html {
   width: 100%; }
   .a-alert p, .a-alert--info p, .a-alert--success p, .a-alert--warning p, .a-alert--danger p {
     margin: 0; }
+  .a-alert ul, .a-alert--info ul, .a-alert--success ul, .a-alert--warning ul, .a-alert--danger ul {
+    margin: 10px 0;
+    padding-left: 20px; }
 
 .a-alert--info {
   background: #daeaf6;
@@ -719,6 +722,9 @@ html {
       .a-card .a-card--header .actions i {
         font-size: 0.875em;
         vertical-align: middle; }
+  .a-card .a-card--footer {
+    border-top: 1px solid #e6e6e6;
+    padding: 10px; }
 
 ::-webkit-input-placeholder {
   color: #bfbfbf; }
@@ -726,8 +732,6 @@ html {
 .a-input, .a-input--group .a-input, .a-input--radio,
 .a-input--checkbox, .a-input--error {
   background: #fff;
-  border: 1px solid #e6e6e6;
-  border-bottom-width: 2px;
   position: relative;
   vertical-align: middle;
   transition: background .15s ease;
@@ -746,28 +750,43 @@ html {
     margin-top: 15px; }
   .a-input label, .a-input--group .a-input label, .a-input--radio label,
   .a-input--checkbox label, .a-input--error label {
-    border-bottom: 1px solid #e6e6e6;
     color: #a6a6a6;
     display: block;
-    font-size: 0.75em;
-    padding: 5px 10px; }
-  .a-input select, .a-input--group .a-input select, .a-input--radio select,
-  .a-input--checkbox select, .a-input--error select,
+    font-size: 0.875em;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  .a-input textarea, .a-input--group .a-input textarea, .a-input--radio textarea,
+  .a-input--checkbox textarea, .a-input--error textarea,
+  .a-input select,
+  .a-input--group .a-input select,
+  .a-input--radio select,
+  .a-input--checkbox select,
+  .a-input--error select,
   .a-input input,
   .a-input--group .a-input input,
   .a-input--radio input,
   .a-input--checkbox input,
   .a-input--error input {
     background: transparent;
-    border: none;
+    border: 1px solid #e6e6e6;
+    border-bottom-width: 2px;
     box-shadow: none;
     color: gray;
+    height: 42px;
     padding: 10px;
     transition: background .25s ease;
     width: 100%; }
-    .a-input select:focus, .a-input--radio select:focus,
-    .a-input--checkbox select:focus, .a-input--error select:focus, .a-input select:hover, .a-input--radio select:hover,
-    .a-input--checkbox select:hover, .a-input--error select:hover,
+    .a-input textarea:focus, .a-input--radio textarea:focus,
+    .a-input--checkbox textarea:focus, .a-input--error textarea:focus, .a-input textarea:hover, .a-input--radio textarea:hover,
+    .a-input--checkbox textarea:hover, .a-input--error textarea:hover,
+    .a-input select:focus,
+    .a-input--radio select:focus,
+    .a-input--checkbox select:focus,
+    .a-input--error select:focus,
+    .a-input select:hover,
+    .a-input--radio select:hover,
+    .a-input--checkbox select:hover,
+    .a-input--error select:hover,
     .a-input input:focus,
     .a-input--radio input:focus,
     .a-input--checkbox input:focus,
@@ -777,21 +796,37 @@ html {
     .a-input--checkbox input:hover,
     .a-input--error input:hover {
       background: #fafafa; }
-    .a-input select:disabled, .a-input--radio select:disabled,
-    .a-input--checkbox select:disabled, .a-input--error select:disabled,
+    .a-input textarea:disabled, .a-input--radio textarea:disabled,
+    .a-input--checkbox textarea:disabled, .a-input--error textarea:disabled,
+    .a-input select:disabled,
+    .a-input--radio select:disabled,
+    .a-input--checkbox select:disabled,
+    .a-input--error select:disabled,
     .a-input input:disabled,
     .a-input--radio input:disabled,
     .a-input--checkbox input:disabled,
     .a-input--error input:disabled {
       background: #fafafa;
       color: #bfbfbf; }
-    .a-input select + .a-addon, .a-input--radio select + .a-addon,
-    .a-input--checkbox select + .a-addon, .a-input--error select + .a-addon,
-    .a-input input + .a-addon,
-    .a-input--radio input + .a-addon,
-    .a-input--checkbox input + .a-addon,
-    .a-input--error input + .a-addon {
-      border-left: 1px solid #e6e6e6; }
+    .a-input textarea + i, .a-input--group .a-input textarea + i, .a-input--radio textarea + i,
+    .a-input--checkbox textarea + i, .a-input--error textarea + i,
+    .a-input select + i,
+    .a-input--group .a-input select + i,
+    .a-input--radio select + i,
+    .a-input--checkbox select + i,
+    .a-input--error select + i,
+    .a-input input + i,
+    .a-input--group .a-input input + i,
+    .a-input--radio input + i,
+    .a-input--checkbox input + i,
+    .a-input--error input + i {
+      border-right: none; }
+  .a-input textarea, .a-input--group .a-input textarea, .a-input--radio textarea,
+  .a-input--checkbox textarea, .a-input--error textarea {
+    max-width: 100%; }
+  .a-input select, .a-input--group .a-input select, .a-input--radio select,
+  .a-input--checkbox select, .a-input--error select {
+    padding: 9px; }
   .a-input .a-addon, .a-input--radio .a-addon,
   .a-input--checkbox .a-addon, .a-input--error .a-addon {
     display: table;
@@ -799,6 +834,8 @@ html {
     .a-input .a-addon i, .a-input--radio .a-addon i,
     .a-input--checkbox .a-addon i, .a-input--error .a-addon i {
       background: #f2f2f2;
+      border: 1px solid #e6e6e6;
+      border-bottom-width: 2px;
       color: #a6a6a6;
       cursor: default;
       display: table-cell;
@@ -808,12 +845,14 @@ html {
       user-select: none;
       vertical-align: middle;
       width: 12%; }
-    .a-input .a-addon + input, .a-input--radio .a-addon + input,
-    .a-input--checkbox .a-addon + input, .a-input--error .a-addon + input {
-      border-left: 1px solid #e6e6e6; }
+      .a-input .a-addon i + input, .a-input--radio .a-addon i + input,
+      .a-input--checkbox .a-addon i + input, .a-input--error .a-addon i + input {
+        border-left: none; }
 
 .a-input--group {
-  clear: both; }
+  clear: both;
+  display: flex;
+  width: 100%; }
   .a-input--group + .a-input + .a-input, .a-input--group + .a-input--radio + .a-input,
   .a-input--group + .a-input--checkbox + .a-input, .a-input--group + .a-input--error + .a-input, .a-input--group .a-input--group + .a-input + .a-input, .a-input--group .a-input--group + .a-input--radio + .a-input,
   .a-input--group .a-input--group + .a-input--checkbox + .a-input, .a-input--group .a-input--group + .a-input--error + .a-input, .a-input--group + .a-input + .a-input--radio, .a-input--group .a-input--group + .a-input + .a-input--radio, .a-input--group + .a-input--radio + .a-input--radio,
@@ -832,7 +871,7 @@ html {
   .a-input--group .a-input, .a-input--group .a-input--radio,
   .a-input--group .a-input--checkbox, .a-input--group .a-input--error {
     float: left;
-    width: 47.5%; }
+    width: 50%; }
     .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input,
     .a-input--group .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input--group .a-input + .a-input--radio, .a-input--group .a-input--radio + .a-input--radio,
     .a-input--group .a-input--checkbox + .a-input--radio, .a-input--group .a-input--error + .a-input--radio,
@@ -848,6 +887,9 @@ html {
 .a-input--checkbox {
   background: transparent;
   border: none; }
+  .a-input--radio label,
+  .a-input--checkbox label {
+    padding: 5px 10px; }
   .a-input--radio input[type=radio],
   .a-input--radio input[type=checkbox],
   .a-input--checkbox input[type=radio],
@@ -944,22 +986,23 @@ html {
   .a-input--checkbox input[type=radio]:disabled + label:after {
     background: #a6a6a6; }
 
-.a-input--error {
-  border-color: #DE5252; }
-  .a-input--error input {
-    color: #DE5252; }
-    .a-input--error input:focus, .a-input--error input:hover {
-      background: #fdf5f5; }
-  .a-input--error .a-addon i {
-    background: #fdf5f5;
-    color: #DE5252; }
-  .a-input--error .a-error {
-    background: #DE5252;
-    color: #fff;
-    display: block;
-    font-size: 0.75em;
-    padding: 5px 10px;
-    text-transform: uppercase; }
+.a-input--error input {
+  border-color: #DE5252;
+  color: #DE5252; }
+  .a-input--error input:focus, .a-input--error input:hover {
+    background: #fdf5f5; }
+.a-input--error .a-addon i {
+  background: #fdf5f5;
+  border-left: none;
+  border-color: #DE5252;
+  color: #DE5252; }
+.a-input--error .a-error {
+  background: #DE5252;
+  color: #fff;
+  display: block;
+  font-size: 0.75em;
+  padding: 5px 10px;
+  text-transform: uppercase; }
 
 .a-table, .a-table--striped, .a-table--bordered, .a-table--hovered, .a-table--framed {
   border-collapse: collapse;

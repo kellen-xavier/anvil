@@ -102,7 +102,7 @@
     .a-input {
         @extend .a-input;
         float: left;
-        width: 47.5%;
+        width: 50%;
 
         & + .a-input {
             margin-top: 0;
@@ -237,6 +237,7 @@
     .a-addon {
         i {
             background: $background-addon-error;
+            border-left: none;
             border-color: $border-input-error;
             color: $color-addon-error;
         }
