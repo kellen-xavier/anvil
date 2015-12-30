@@ -1,3 +1,45 @@
 .a-steps {
-	
+	margin: 0;
+	padding: 0;
+
+	li {
+		border: 1px solid #ddd;
+		display: inline-block;
+		list-style: none;
+		margin-right: -5px;
+		padding: 20px;
+		position: relative;
+
+		&:last-child {
+			&:before,
+			&:after {
+				content: initial;
+			}
+		}
+
+		&:before,
+		&:after {
+			border-left: 25px solid;
+			border-bottom: 30px solid transparent;
+			border-top: 30px solid transparent;
+			content: "";
+			display: block;
+			height: 0;
+			position: absolute;
+			top: 0;
+			width: 0;
+		}
+
+		&:before {
+			border-left-color: #fff;
+			right: -23px;
+			z-index: 9;
+		}
+
+		&:after {
+			border-left-color: #ddd;
+			right: -25px;
+			z-index: 8;
+		}
+	}
 }

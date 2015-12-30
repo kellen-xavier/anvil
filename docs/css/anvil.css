@@ -1049,4 +1049,35 @@ html {
 .a-table--framed {
   border: 1px solid #d9d9d9; }
 
+.a-steps {
+  margin: 0;
+  padding: 0; }
+  .a-steps li {
+    border: 1px solid #ddd;
+    display: inline-block;
+    list-style: none;
+    margin-right: -5px;
+    padding: 20px;
+    position: relative; }
+    .a-steps li:last-child:before, .a-steps li:last-child:after {
+      content: initial; }
+    .a-steps li:before, .a-steps li:after {
+      border-left: 25px solid;
+      border-bottom: 30px solid transparent;
+      border-top: 30px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      top: 0;
+      width: 0; }
+    .a-steps li:before {
+      border-left-color: #fff;
+      right: -23px;
+      z-index: 9; }
+    .a-steps li:after {
+      border-left-color: #ddd;
+      right: -25px;
+      z-index: 8; }
+
 /*# sourceMappingURL=anvil.css.map */
