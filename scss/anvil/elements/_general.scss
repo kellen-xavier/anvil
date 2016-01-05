@@ -69,7 +69,7 @@ html {
 // Badges
 .badge {
 	background: $background-badge;
-	border-radius: 5px;
+	border-radius: $base-space;
 	color: $color-badge;
 	font-size: $fs-12;
 	padding: ($base-space) ($base-space * 2);

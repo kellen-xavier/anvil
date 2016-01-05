@@ -1,16 +1,31 @@
-.a-steps {
+.a-steps--blocks {
 	margin: 0;
 	padding: 0;
 
 	li {
-		border: 1px solid #ddd;
-		display: inline-block;
+		background: $background-step;
+		box-shadow: inset 0px 1px 0 $border-step,
+					inset 0px -1px 0 $border-step;
+		color: $color-step;
+		font-weight: bold;
+		float: left;
 		list-style: none;
-		margin-right: -5px;
-		padding: 20px;
+		padding: ($base-space * 3) 0;
+		padding-left: $base-space * 4;
 		position: relative;
+		text-align: center;
+		width: 125px;
+
+		&:first-child {
+			box-shadow: inset 1px 1px 0 $border-step,
+						inset 1px -1px 0 $border-step;
+			padding-left: 0;
+		}
 
 		&:last-child {
+			box-shadow: inset -1px 1px 0 $border-step,
+						inset -1px -1px 0 $border-step;
+	
 			&:before,
 			&:after {
 				content: initial;
@@ -19,27 +34,44 @@
 
 		&:before,
 		&:after {
-			border-left: 25px solid;
-			border-bottom: 30px solid transparent;
-			border-top: 30px solid transparent;
 			content: "";
 			display: block;
 			height: 0;
 			position: absolute;
-			top: 0;
 			width: 0;
 		}
 
 		&:before {
-			border-left-color: #fff;
-			right: -23px;
+			border-left: 19px solid $background-step;
+			border-bottom: 23px solid transparent;
+			border-top: 23px solid transparent;
+			right: -18px;
+			top: 1px;
 			z-index: 9;
 		}
 
 		&:after {
-			border-left-color: #ddd;
-			right: -25px;
+			border-left: 20px solid $border-step;
+			border-bottom: 24px solid transparent;
+			border-top: 24px solid transparent;
+			right: -19px;
+			top: 0;
 			z-index: 8;
+		}
+
+		&.completed {
+			color: $color-step-completed;
+			font-weight: normal;
+		}
+
+		&.active {
+			background: $primary-color;
+			color: $color-step-active;
+			font-weight: bold;
+			
+			&:before {
+				border-left-color: $primary-color;
+			}
 		}
 	}
 }

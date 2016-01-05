@@ -24,6 +24,7 @@
 /* Border */
 /* Color */
 /* Pagination */
+/* Steps */
 /* Table */
 /* Highlights */
 /* Fonts */
@@ -575,7 +576,7 @@ html {
 .a-alert--warning {
   background: #ffeeac;
   border-color: #FFD846;
-  color: #927400; }
+  color: #937400; }
 
 .a-alert--danger {
   background: #eea8a8;
@@ -597,12 +598,33 @@ html {
     text-decoration: none; }
   .a-button + .a-button, .a-button--label + .a-button, .a-button--link + .a-button, .a-button--primary + .a-button, .a-button--success + .a-button, .a-button--danger + .a-button, .a-button--warning + .a-button, .a-button + .a-button--label, .a-button--label + .a-button--label, .a-button--link + .a-button--label, .a-button--primary + .a-button--label, .a-button--success + .a-button--label, .a-button--danger + .a-button--label, .a-button--warning + .a-button--label, .a-button + .a-button--link, .a-button--label + .a-button--link, .a-button--link + .a-button--link, .a-button--primary + .a-button--link, .a-button--success + .a-button--link, .a-button--danger + .a-button--link, .a-button--warning + .a-button--link, .a-button + .a-button--primary, .a-button--label + .a-button--primary, .a-button--link + .a-button--primary, .a-button--primary + .a-button--primary, .a-button--success + .a-button--primary, .a-button--danger + .a-button--primary, .a-button--warning + .a-button--primary, .a-button + .a-button--success, .a-button--label + .a-button--success, .a-button--link + .a-button--success, .a-button--primary + .a-button--success, .a-button--success + .a-button--success, .a-button--danger + .a-button--success, .a-button--warning + .a-button--success, .a-button + .a-button--danger, .a-button--label + .a-button--danger, .a-button--link + .a-button--danger, .a-button--primary + .a-button--danger, .a-button--success + .a-button--danger, .a-button--danger + .a-button--danger, .a-button--warning + .a-button--danger, .a-button + .a-button--warning, .a-button--label + .a-button--warning, .a-button--link + .a-button--warning, .a-button--primary + .a-button--warning, .a-button--success + .a-button--warning, .a-button--danger + .a-button--warning, .a-button--warning + .a-button--warning {
     margin-left: 10px; }
-  .a-button b, .a-button--label b, .a-button--link b, .a-button--primary b, .a-button--success b, .a-button--danger b, .a-button--warning b, .open > .a-button, .open > .a-button--label, .open > .a-button--link, .open > .a-button--primary, .open > .a-button--success, .open > .a-button--danger, .open > .a-button--warning, .a-button:hover, .a-button--label:hover, .a-button--link:hover, .a-button--primary:hover, .a-button--success:hover, .a-button--danger:hover, .a-button--warning:hover {
+  .a-button b, .a-button--label b, .a-button--link b, .a-button--primary b, .a-button--success b, .a-button--danger b, .a-button--warning b,
+  .open > .a-button,
+  .open > .a-button--label,
+  .open > .a-button--link,
+  .open > .a-button--primary,
+  .open > .a-button--success,
+  .open > .a-button--danger,
+  .open > .a-button--warning, .a-button:hover, .a-button--label:hover, .a-button--link:hover, .a-button--primary:hover, .a-button--success:hover, .a-button--danger:hover, .a-button--warning:hover {
     background: #f2f2f2;
     border-color: #cccccc; }
-    .a-button b.a-button--flat, .a-button--label b.a-button--flat, .a-button--link b.a-button--flat, .a-button--primary b.a-button--flat, .a-button--success b.a-button--flat, .a-button--danger b.a-button--flat, .a-button--warning b.a-button--flat, .open > .a-button.a-button--flat, .open > .a-button--flat.a-button--label, .open > .a-button--flat.a-button--link, .open > .a-button--flat.a-button--primary, .open > .a-button--flat.a-button--success, .open > .a-button--flat.a-button--danger, .open > .a-button--flat.a-button--warning, .a-button:hover.a-button--flat, .a-button--label:hover.a-button--flat, .a-button--link:hover.a-button--flat, .a-button--primary:hover.a-button--flat, .a-button--success:hover.a-button--flat, .a-button--danger:hover.a-button--flat, .a-button--warning:hover.a-button--flat {
+    .a-button b.a-button--flat, .a-button--label b.a-button--flat, .a-button--link b.a-button--flat, .a-button--primary b.a-button--flat, .a-button--success b.a-button--flat, .a-button--danger b.a-button--flat, .a-button--warning b.a-button--flat,
+    .open > .a-button.a-button--flat,
+    .open > .a-button--flat.a-button--label,
+    .open > .a-button--flat.a-button--link,
+    .open > .a-button--flat.a-button--primary,
+    .open > .a-button--flat.a-button--success,
+    .open > .a-button--flat.a-button--danger,
+    .open > .a-button--flat.a-button--warning, .a-button:hover.a-button--flat, .a-button--label:hover.a-button--flat, .a-button--link:hover.a-button--flat, .a-button--primary:hover.a-button--flat, .a-button--success:hover.a-button--flat, .a-button--danger:hover.a-button--flat, .a-button--warning:hover.a-button--flat {
       border-color: #f2f2f2; }
-    .a-button b a, .a-button--label b a, .a-button--link b a, .a-button--primary b a, .a-button--success b a, .a-button--danger b a, .a-button--warning b a, .open > .a-button a, .open > .a-button--label a, .open > .a-button--link a, .open > .a-button--primary a, .open > .a-button--success a, .open > .a-button--danger a, .open > .a-button--warning a, .a-button:hover a, .a-button--label:hover a, .a-button--link:hover a, .a-button--primary:hover a, .a-button--success:hover a, .a-button--danger:hover a, .a-button--warning:hover a {
+    .a-button b a, .a-button--label b a, .a-button--link b a, .a-button--primary b a, .a-button--success b a, .a-button--danger b a, .a-button--warning b a,
+    .open > .a-button a,
+    .open > .a-button--label a,
+    .open > .a-button--link a,
+    .open > .a-button--primary a,
+    .open > .a-button--success a,
+    .open > .a-button--danger a,
+    .open > .a-button--warning a, .a-button:hover a, .a-button--label:hover a, .a-button--link:hover a, .a-button--primary:hover a, .a-button--success:hover a, .a-button--danger:hover a, .a-button--warning:hover a {
       color: gray; }
   .a-button.circle a, .circle.a-button--label a, .circle.a-button--link a, .circle.a-button--primary a, .circle.a-button--success a, .circle.a-button--danger a, .circle.a-button--warning a {
     padding: 10px; }
@@ -616,6 +638,7 @@ html {
     padding: 10px;
     position: absolute;
     top: 0; }
+
 .a-button--label a.right {
   padding-left: 15px;
   padding-right: 55px; }
@@ -640,12 +663,15 @@ html {
   .a-button--primary b,
   .a-button--primary a {
     color: #fff; }
-  .a-button--primary b, .open > .a-button--primary, .a-button--primary:hover {
+  .a-button--primary b,
+  .open > .a-button--primary, .a-button--primary:hover {
     background: #0c97de;
     border-color: #086696; }
-    .a-button--primary b.a-button--flat, .open > .a-button--primary.a-button--flat, .a-button--primary:hover.a-button--flat {
+    .a-button--primary b.a-button--flat,
+    .open > .a-button--primary.a-button--flat, .a-button--primary:hover.a-button--flat {
       border-color: #0c97de; }
-    .a-button--primary b a, .open > .a-button--primary a, .a-button--primary:hover a {
+    .a-button--primary b a,
+    .open > .a-button--primary a, .a-button--primary:hover a {
       color: #fff; }
   .a-button--primary.a-button--flat {
     border-color: #0B87C6; }
@@ -656,12 +682,15 @@ html {
   .a-button--success b,
   .a-button--success a {
     color: #fff; }
-  .a-button--success b, .open > .a-button--success, .a-button--success:hover {
+  .a-button--success b,
+  .open > .a-button--success, .a-button--success:hover {
     background: #6fb84b;
     border-color: #4e8234; }
-    .a-button--success b.a-button--flat, .open > .a-button--success.a-button--flat, .a-button--success:hover.a-button--flat {
+    .a-button--success b.a-button--flat,
+    .open > .a-button--success.a-button--flat, .a-button--success:hover.a-button--flat {
       border-color: #6fb84b; }
-    .a-button--success b a, .open > .a-button--success a, .a-button--success:hover a {
+    .a-button--success b a,
+    .open > .a-button--success a, .a-button--success:hover a {
       color: #fff; }
   .a-button--success.a-button--flat {
     border-color: #64A742; }
@@ -672,12 +701,15 @@ html {
   .a-button--danger b,
   .a-button--danger a {
     color: #fff; }
-  .a-button--danger b, .open > .a-button--danger, .a-button--danger:hover {
+  .a-button--danger b,
+  .open > .a-button--danger, .a-button--danger:hover {
     background: #e26767;
     border-color: #d42929; }
-    .a-button--danger b.a-button--flat, .open > .a-button--danger.a-button--flat, .a-button--danger:hover.a-button--flat {
+    .a-button--danger b.a-button--flat,
+    .open > .a-button--danger.a-button--flat, .a-button--danger:hover.a-button--flat {
       border-color: #e26767; }
-    .a-button--danger b a, .open > .a-button--danger a, .a-button--danger:hover a {
+    .a-button--danger b a,
+    .open > .a-button--danger a, .a-button--danger:hover a {
       color: #fff; }
   .a-button--danger.a-button--flat {
     border-color: #DE5252; }
@@ -688,12 +720,15 @@ html {
   .a-button--warning b,
   .a-button--warning a {
     color: #595959; }
-  .a-button--warning b, .open > .a-button--warning, .a-button--warning:hover {
-    background: #ffdd5f;
+  .a-button--warning b,
+  .open > .a-button--warning, .a-button--warning:hover {
+    background: #ffdd60;
     border-color: #ffcd13; }
-    .a-button--warning b.a-button--flat, .open > .a-button--warning.a-button--flat, .a-button--warning:hover.a-button--flat {
-      border-color: #ffdd5f; }
-    .a-button--warning b a, .open > .a-button--warning a, .a-button--warning:hover a {
+    .a-button--warning b.a-button--flat,
+    .open > .a-button--warning.a-button--flat, .a-button--warning:hover.a-button--flat {
+      border-color: #ffdd60; }
+    .a-button--warning b a,
+    .open > .a-button--warning a, .a-button--warning:hover a {
       color: #595959; }
   .a-button--warning.a-button--flat {
     border-color: #FFD846; }
@@ -737,15 +772,20 @@ html {
   transition: background .15s ease;
   width: 100%; }
   .a-input + .a-input--group, .a-input--group .a-input + .a-input--group, .a-input--radio + .a-input--group,
-  .a-input--checkbox + .a-input--group, .a-input--error + .a-input--group, .a-input + .a-input, .a-input--radio + .a-input,
-  .a-input--checkbox + .a-input, .a-input--error + .a-input, .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input,
-  .a-input--group .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input + .a-input--radio, .a-input--group .a-input + .a-input--radio, .a-input--radio + .a-input--radio,
+  .a-input--checkbox + .a-input--group, .a-input--error + .a-input--group,
+  .a-input + .a-input, .a-input--radio + .a-input,
+  .a-input--checkbox + .a-input, .a-input--error + .a-input, .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input, .a-input--group
+  .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input,
+  .a-input + .a-input--radio, .a-input--group .a-input + .a-input--radio, .a-input--radio + .a-input--radio,
   .a-input--checkbox + .a-input--radio, .a-input--error + .a-input--radio,
-  .a-input + .a-input--checkbox,
-  .a-input--group .a-input + .a-input--checkbox,
-  .a-input--radio + .a-input--checkbox,
-  .a-input--checkbox + .a-input--checkbox,
-  .a-input--error + .a-input--checkbox, .a-input + .a-input--error, .a-input--group .a-input + .a-input--error, .a-input--radio + .a-input--error,
+  .a-input +
+  .a-input--checkbox, .a-input--group .a-input +
+  .a-input--checkbox, .a-input--radio +
+  .a-input--checkbox,
+  .a-input--checkbox +
+  .a-input--checkbox, .a-input--error +
+  .a-input--checkbox,
+  .a-input + .a-input--error, .a-input--group .a-input + .a-input--error, .a-input--radio + .a-input--error,
   .a-input--checkbox + .a-input--error, .a-input--error + .a-input--error {
     margin-top: 15px; }
   .a-input label, .a-input--group .a-input label, .a-input--radio label,
@@ -757,16 +797,10 @@ html {
     padding-bottom: 10px; }
   .a-input textarea, .a-input--group .a-input textarea, .a-input--radio textarea,
   .a-input--checkbox textarea, .a-input--error textarea,
-  .a-input select,
-  .a-input--group .a-input select,
-  .a-input--radio select,
-  .a-input--checkbox select,
-  .a-input--error select,
-  .a-input input,
-  .a-input--group .a-input input,
-  .a-input--radio input,
-  .a-input--checkbox input,
-  .a-input--error input {
+  .a-input select, .a-input--group .a-input select, .a-input--radio select,
+  .a-input--checkbox select, .a-input--error select,
+  .a-input input, .a-input--group .a-input input, .a-input--radio input,
+  .a-input--checkbox input, .a-input--error input {
     background: transparent;
     border: 1px solid #e6e6e6;
     border-bottom-width: 2px;
@@ -779,47 +813,29 @@ html {
     .a-input textarea:focus, .a-input--radio textarea:focus,
     .a-input--checkbox textarea:focus, .a-input--error textarea:focus, .a-input textarea:hover, .a-input--radio textarea:hover,
     .a-input--checkbox textarea:hover, .a-input--error textarea:hover,
-    .a-input select:focus,
-    .a-input--radio select:focus,
-    .a-input--checkbox select:focus,
-    .a-input--error select:focus,
-    .a-input select:hover,
-    .a-input--radio select:hover,
-    .a-input--checkbox select:hover,
-    .a-input--error select:hover,
-    .a-input input:focus,
-    .a-input--radio input:focus,
-    .a-input--checkbox input:focus,
-    .a-input--error input:focus,
-    .a-input input:hover,
-    .a-input--radio input:hover,
-    .a-input--checkbox input:hover,
-    .a-input--error input:hover {
+    .a-input select:focus, .a-input--radio select:focus,
+    .a-input--checkbox select:focus, .a-input--error select:focus,
+    .a-input select:hover, .a-input--radio select:hover,
+    .a-input--checkbox select:hover, .a-input--error select:hover,
+    .a-input input:focus, .a-input--radio input:focus,
+    .a-input--checkbox input:focus, .a-input--error input:focus,
+    .a-input input:hover, .a-input--radio input:hover,
+    .a-input--checkbox input:hover, .a-input--error input:hover {
       background: #fafafa; }
     .a-input textarea:disabled, .a-input--radio textarea:disabled,
     .a-input--checkbox textarea:disabled, .a-input--error textarea:disabled,
-    .a-input select:disabled,
-    .a-input--radio select:disabled,
-    .a-input--checkbox select:disabled,
-    .a-input--error select:disabled,
-    .a-input input:disabled,
-    .a-input--radio input:disabled,
-    .a-input--checkbox input:disabled,
-    .a-input--error input:disabled {
+    .a-input select:disabled, .a-input--radio select:disabled,
+    .a-input--checkbox select:disabled, .a-input--error select:disabled,
+    .a-input input:disabled, .a-input--radio input:disabled,
+    .a-input--checkbox input:disabled, .a-input--error input:disabled {
       background: #fafafa;
       color: #bfbfbf; }
     .a-input textarea + i, .a-input--group .a-input textarea + i, .a-input--radio textarea + i,
     .a-input--checkbox textarea + i, .a-input--error textarea + i,
-    .a-input select + i,
-    .a-input--group .a-input select + i,
-    .a-input--radio select + i,
-    .a-input--checkbox select + i,
-    .a-input--error select + i,
-    .a-input input + i,
-    .a-input--group .a-input input + i,
-    .a-input--radio input + i,
-    .a-input--checkbox input + i,
-    .a-input--error input + i {
+    .a-input select + i, .a-input--group .a-input select + i, .a-input--radio select + i,
+    .a-input--checkbox select + i, .a-input--error select + i,
+    .a-input input + i, .a-input--group .a-input input + i, .a-input--radio input + i,
+    .a-input--checkbox input + i, .a-input--error input + i {
       border-right: none; }
   .a-input textarea, .a-input--group .a-input textarea, .a-input--radio textarea,
   .a-input--checkbox textarea, .a-input--error textarea {
@@ -853,33 +869,41 @@ html {
   clear: both;
   display: flex;
   width: 100%; }
-  .a-input--group + .a-input + .a-input, .a-input--group + .a-input--radio + .a-input,
-  .a-input--group + .a-input--checkbox + .a-input, .a-input--group + .a-input--error + .a-input, .a-input--group .a-input--group + .a-input + .a-input, .a-input--group .a-input--group + .a-input--radio + .a-input,
-  .a-input--group .a-input--group + .a-input--checkbox + .a-input, .a-input--group .a-input--group + .a-input--error + .a-input, .a-input--group + .a-input + .a-input--radio, .a-input--group .a-input--group + .a-input + .a-input--radio, .a-input--group + .a-input--radio + .a-input--radio,
-  .a-input--group + .a-input--checkbox + .a-input--radio, .a-input--group + .a-input--error + .a-input--radio,
-  .a-input--group + .a-input + .a-input--checkbox,
-  .a-input--group .a-input--group + .a-input + .a-input--checkbox,
-  .a-input--group + .a-input--radio + .a-input--checkbox,
-  .a-input--group + .a-input--checkbox + .a-input--checkbox,
-  .a-input--group + .a-input--error + .a-input--checkbox, .a-input--group + .a-input + .a-input--error, .a-input--group .a-input--group + .a-input + .a-input--error, .a-input--group + .a-input--radio + .a-input--error,
-  .a-input--group + .a-input--checkbox + .a-input--error, .a-input--group + .a-input--error + .a-input--error, .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio,
-  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error, .a-input--group + .a-input--group {
+  .a-input--group + .a-input + .a-input, .a-input--group + .a-input--radio + .a-input, .a-input--group +
+  .a-input--checkbox + .a-input, .a-input--group + .a-input--error + .a-input, .a-input--group .a-input--group + .a-input + .a-input, .a-input--group .a-input--group + .a-input--radio + .a-input, .a-input--group .a-input--group +
+  .a-input--checkbox + .a-input, .a-input--group .a-input--group + .a-input--error + .a-input, .a-input--group + .a-input + .a-input--radio, .a-input--group .a-input--group + .a-input + .a-input--radio, .a-input--group + .a-input--radio + .a-input--radio, .a-input--group +
+  .a-input--checkbox + .a-input--radio, .a-input--group + .a-input--error + .a-input--radio, .a-input--group + .a-input +
+  .a-input--checkbox, .a-input--group .a-input--group + .a-input +
+  .a-input--checkbox, .a-input--group + .a-input--radio +
+  .a-input--checkbox, .a-input--group +
+  .a-input--checkbox +
+  .a-input--checkbox, .a-input--group + .a-input--error +
+  .a-input--checkbox, .a-input--group + .a-input + .a-input--error, .a-input--group .a-input--group + .a-input + .a-input--error, .a-input--group + .a-input--radio + .a-input--error, .a-input--group +
+  .a-input--checkbox + .a-input--error, .a-input--group + .a-input--error + .a-input--error,
+  .a-input--group + .a-input, .a-input--group
+  .a-input--group + .a-input,
+  .a-input--group + .a-input--radio,
+  .a-input--group +
+  .a-input--checkbox,
+  .a-input--group + .a-input--error,
+  .a-input--group + .a-input--group {
     margin-top: 15px; }
-  .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio,
-  .a-input--group + .a-input--checkbox, .a-input--group + .a-input--error {
+  .a-input--group + .a-input, .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio, .a-input--group +
+  .a-input--checkbox, .a-input--group + .a-input--error {
     clear: both; }
-  .a-input--group .a-input, .a-input--group .a-input--radio,
-  .a-input--group .a-input--checkbox, .a-input--group .a-input--error {
+  .a-input--group .a-input, .a-input--group .a-input--radio, .a-input--group
+  .a-input--checkbox, .a-input--group .a-input--error {
     float: left;
     width: 50%; }
-    .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input,
-    .a-input--group .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input--group .a-input + .a-input--radio, .a-input--group .a-input--radio + .a-input--radio,
-    .a-input--group .a-input--checkbox + .a-input--radio, .a-input--group .a-input--error + .a-input--radio,
-    .a-input--group .a-input + .a-input--checkbox,
-    .a-input--group .a-input--radio + .a-input--checkbox,
-    .a-input--group .a-input--checkbox + .a-input--checkbox,
-    .a-input--group .a-input--error + .a-input--checkbox, .a-input--group .a-input + .a-input--error, .a-input--group .a-input--radio + .a-input--error,
-    .a-input--group .a-input--checkbox + .a-input--error, .a-input--group .a-input--error + .a-input--error {
+    .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input, .a-input--group
+    .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input--group .a-input + .a-input--radio, .a-input--group .a-input--radio + .a-input--radio, .a-input--group
+    .a-input--checkbox + .a-input--radio, .a-input--group .a-input--error + .a-input--radio, .a-input--group .a-input +
+    .a-input--checkbox, .a-input--group .a-input--radio +
+    .a-input--checkbox, .a-input--group
+    .a-input--checkbox +
+    .a-input--checkbox, .a-input--group .a-input--error +
+    .a-input--checkbox, .a-input--group .a-input + .a-input--error, .a-input--group .a-input--radio + .a-input--error, .a-input--group
+    .a-input--checkbox + .a-input--error, .a-input--group .a-input--error + .a-input--error {
       margin-top: 0;
       margin-left: 20px; }
 
@@ -991,11 +1015,13 @@ html {
   color: #DE5252; }
   .a-input--error input:focus, .a-input--error input:hover {
     background: #fdf5f5; }
+
 .a-input--error .a-addon i {
   background: #fdf5f5;
   border-left: none;
   border-color: #DE5252;
   color: #DE5252; }
+
 .a-input--error .a-error {
   background: #DE5252;
   color: #fff;
@@ -1040,6 +1066,7 @@ html {
 
 .a-table--bordered thead tr th {
   border: 1px solid #d9d9d9; }
+
 .a-table--bordered tbody tr td {
   border: 1px solid #d9d9d9; }
 
@@ -1049,35 +1076,54 @@ html {
 .a-table--framed {
   border: 1px solid #d9d9d9; }
 
-.a-steps {
+.a-steps--blocks {
   margin: 0;
   padding: 0; }
-  .a-steps li {
-    border: 1px solid #ddd;
-    display: inline-block;
+  .a-steps--blocks li {
+    background: #fff;
+    box-shadow: inset 0px 1px 0 #e6e6e6, inset 0px -1px 0 #e6e6e6;
+    color: #999999;
+    font-weight: bold;
+    float: left;
     list-style: none;
-    margin-right: -5px;
-    padding: 20px;
-    position: relative; }
-    .a-steps li:last-child:before, .a-steps li:last-child:after {
-      content: initial; }
-    .a-steps li:before, .a-steps li:after {
-      border-left: 25px solid;
-      border-bottom: 30px solid transparent;
-      border-top: 30px solid transparent;
+    padding: 15px 0;
+    padding-left: 20px;
+    position: relative;
+    text-align: center;
+    width: 125px; }
+    .a-steps--blocks li:first-child {
+      box-shadow: inset 1px 1px 0 #e6e6e6, inset 1px -1px 0 #e6e6e6;
+      padding-left: 0; }
+    .a-steps--blocks li:last-child {
+      box-shadow: inset -1px 1px 0 #e6e6e6, inset -1px -1px 0 #e6e6e6; }
+      .a-steps--blocks li:last-child:before, .a-steps--blocks li:last-child:after {
+        content: initial; }
+    .a-steps--blocks li:before, .a-steps--blocks li:after {
       content: "";
       display: block;
       height: 0;
       position: absolute;
-      top: 0;
       width: 0; }
-    .a-steps li:before {
-      border-left-color: #fff;
-      right: -23px;
+    .a-steps--blocks li:before {
+      border-left: 19px solid #fff;
+      border-bottom: 23px solid transparent;
+      border-top: 23px solid transparent;
+      right: -18px;
+      top: 1px;
       z-index: 9; }
-    .a-steps li:after {
-      border-left-color: #ddd;
-      right: -25px;
+    .a-steps--blocks li:after {
+      border-left: 20px solid #e6e6e6;
+      border-bottom: 24px solid transparent;
+      border-top: 24px solid transparent;
+      right: -19px;
+      top: 0;
       z-index: 8; }
-
-/*# sourceMappingURL=anvil.css.map */
+    .a-steps--blocks li.completed {
+      color: #cccccc;
+      font-weight: normal; }
+    .a-steps--blocks li.active {
+      background: #0B87C6;
+      color: #fff;
+      font-weight: bold; }
+      .a-steps--blocks li.active:before {
+        border-left-color: #0B87C6; }

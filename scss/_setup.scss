@@ -145,6 +145,17 @@
     $color-pagination-active: $base-color;
     $color-pagination-disabled: darken($base-color, 30);
 
+/* Steps */
+    // Backgrounds
+    $background-step: $base-color;
+    $background-step-active: $primary-color;
+    // Borders
+    $border-step: darken($base-color, 10);
+    // Colors
+    $color-step: darken($base-color, 40);
+    $color-step-completed: darken($base-color, 20);
+    $color-step-active: $base-color;
+
 /* Table */
     // Backgrounds
     $background-table: $base-color;
