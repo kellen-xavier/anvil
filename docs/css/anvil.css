@@ -631,10 +631,13 @@ html {
     border-color: #fff; }
   .a-button:disabled, .a-button--label:disabled, .a-button--link:disabled, .a-button--primary:disabled, .a-button--success:disabled, .a-button--danger:disabled, .a-button--warning:disabled {
     background: #f2f2f2;
+    border-color: #d9d9d9;
     cursor: default; }
     .a-button:disabled:hover, .a-button--label:disabled:hover, .a-button--link:disabled:hover, .a-button--primary:disabled:hover, .a-button--success:disabled:hover, .a-button--danger:disabled:hover, .a-button--warning:disabled:hover {
       background: #f2f2f2;
       border-color: #d9d9d9; }
+      .a-button:disabled:hover a, .a-button--label:disabled:hover a, .a-button--link:disabled:hover a, .a-button--primary:disabled:hover a, .a-button--success:disabled:hover a, .a-button--danger:disabled:hover a, .a-button--warning:disabled:hover a {
+        color: #a6a6a6; }
     .a-button:disabled a, .a-button--label:disabled a, .a-button--link:disabled a, .a-button--primary:disabled a, .a-button--success:disabled a, .a-button--danger:disabled a, .a-button--warning:disabled a {
       color: #a6a6a6;
       cursor: default;

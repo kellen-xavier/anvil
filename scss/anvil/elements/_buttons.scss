@@ -47,11 +47,16 @@
 
     &:disabled {
         background: $background-button-disabled;
+        border-color: $border-button;
         cursor: default;
 
         &:hover {
             background: $background-button-disabled;
             border-color: $border-button;
+
+            a {
+                color: $color-button-disabled;
+            }
         } 
 
         a {
