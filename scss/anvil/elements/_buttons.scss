@@ -44,6 +44,22 @@
     &.a-button--flat {
         border-color: $background-button;
     }
+
+    &:disabled {
+        background: $background-button-disabled;
+        cursor: default;
+
+        &:hover {
+            background: $background-button-disabled;
+            border-color: $border-button;
+        } 
+
+        a {
+            color: $color-button-disabled;
+            cursor: default;
+            pointer-events: none;
+        }
+    }
 }
 
 .a-button--label {

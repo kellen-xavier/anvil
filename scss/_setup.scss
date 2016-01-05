@@ -83,6 +83,8 @@
         // Button Danger
         $background-button-danger: $danger-color;
         $background-button-danger-hover: lighten($danger-color, 5);
+        // Button Disabled
+        $background-button-disabled: darken($base-color, 5);
     /* Border */
         // Input
         $border-input: darken($background-input, 10);
@@ -130,6 +132,7 @@
         $color-button-success: $base-color;
         $color-button-warning: darken($base-color, 65);
         $color-button-danger: $base-color;
+        $color-button-disabled: darken($base-color, 35);
 
 /* Pagination */
     // Backgrounds 
