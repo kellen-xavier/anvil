@@ -99,11 +99,13 @@
         clear: both;
     }
 
+    .a-input--group,
     .a-input {
         @extend .a-input;
         float: left;
         width: 50%;
 
+        & + .a-input--group,
         & + .a-input {
             margin-top: 0;
             margin-left: 20px;
