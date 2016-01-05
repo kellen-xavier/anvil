@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
+.clear {
+    clear: both;
+}
+
 .topbar {
     background: #fafafa;
     height: 80px;

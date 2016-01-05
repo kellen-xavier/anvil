@@ -1,0 +1,26 @@
+{
+  "name": "anvil",
+  "version": "0.1.1-alpha",
+  "description": "Its better be the hammer than the anvil",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtechcommerce/anvil.git"
+  },
+  "author": "João Gonçalves <joaokmz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xtechcommerce/anvil/issues"
+  },
+  "homepage": "https://github.com/xtechcommerce/anvil#readme"
+}
