@@ -24,7 +24,6 @@
 /* Border */
 /* Color */
 /* Pagination */
-/* Steps */
 /* Table */
 /* Highlights */
 /* Fonts */
@@ -1075,57 +1074,3 @@ html {
 
 .a-table--framed {
   border: 1px solid #d9d9d9; }
-
-.a-steps--blocks {
-  margin: 0;
-  padding: 0; }
-  .a-steps--blocks li {
-    background: #fff;
-    box-shadow: inset 0px 1px 0 #e6e6e6, inset 0px -1px 0 #e6e6e6;
-    color: #999999;
-    display: inline-block;
-    font-weight: bold;
-    list-style: none;
-    margin-left: -4px;
-    padding: 15px 0;
-    padding-left: 20px;
-    position: relative;
-    text-align: center;
-    width: 125px; }
-    .a-steps--blocks li:first-child {
-      box-shadow: inset 1px 1px 0 #e6e6e6, inset 1px -1px 0 #e6e6e6;
-      padding-left: 0; }
-    .a-steps--blocks li:last-child {
-      box-shadow: inset -1px 1px 0 #e6e6e6, inset -1px -1px 0 #e6e6e6; }
-      .a-steps--blocks li:last-child:before, .a-steps--blocks li:last-child:after {
-        content: initial; }
-    .a-steps--blocks li:before, .a-steps--blocks li:after {
-      content: "";
-      display: block;
-      height: 0;
-      position: absolute;
-      width: 0; }
-    .a-steps--blocks li:before {
-      border-left: 19px solid #fff;
-      border-bottom: 23px solid transparent;
-      border-top: 23px solid transparent;
-      right: -19px;
-      top: 1px;
-      z-index: 9; }
-    .a-steps--blocks li:after {
-      border-left: 20px solid #e6e6e6;
-      border-bottom: 24px solid transparent;
-      border-top: 24px solid transparent;
-      right: -20px;
-      top: 0;
-      z-index: 8; }
-    .a-steps--blocks li.completed {
-      color: #cccccc;
-      font-weight: normal; }
-    .a-steps--blocks li.active {
-      background: #0B87C6;
-      box-shadow: inset 1px 1px 0 #0B87C6, inset 1px -1px 0 #0B87C6;
-      color: #fff;
-      font-weight: bold; }
-      .a-steps--blocks li.active:before {
-        border-left-color: #0B87C6; }
