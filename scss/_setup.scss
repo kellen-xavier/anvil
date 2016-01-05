@@ -135,38 +135,39 @@
     // Backgrounds 
     $background-pagination: $base-color;
     $background-pagination-active: $primary-color;
-    $background-pagination-hovered: darken($base-color, 5);
-    $background-pagination-disabled: darken($base-color, 10);
+    $background-pagination-hovered: darken($background-pagination, 5);
+    $background-pagination-disabled: darken($background-pagination, 10);
     // Borders
-    $border-pagination: darken($base-color, 20);
+    $border-pagination: darken($background-pagination, 20);
     $border-pagination-active: $background-pagination-active;
     // Colors 
-    $color-pagination: darken($base-color, 50);
-    $color-pagination-active: $base-color;
-    $color-pagination-disabled: darken($base-color, 30);
+    $color-pagination: darken($background-pagination, 50);
+    $color-pagination-active: $background-pagination;
+    $color-pagination-disabled: darken($background-pagination, 30);
 
 /* Steps */
     // Backgrounds
     $background-step: $base-color;
     $background-step-active: $primary-color;
     // Borders
-    $border-step: darken($base-color, 10);
+    $border-step: darken($background-step, 10);
+    $border-step-active: $background-step-active;
     // Colors
-    $color-step: darken($base-color, 40);
-    $color-step-completed: darken($base-color, 20);
-    $color-step-active: $base-color;
+    $color-step: darken($background-step, 40);
+    $color-step-completed: darken($background-step, 20);
+    $color-step-active: $background-step;
 
 /* Table */
     // Backgrounds
     $background-table: $base-color;
-    $background-table-striped: darken($base-color, 5);
-    $background-table-hover: darken($base-color, 10);
+    $background-table-striped: darken($background-table, 5);
+    $background-table-hover: darken($background-table, 10);
     // Borders
-    $border-table: darken($base-color, 15);
-    $border-table-header: darken($base-color, 20);
+    $border-table: darken($background-table, 15);
+    $border-table-header: darken($background-table, 20);
     $border-table-footer: $border-table-header;
     // Colors
-    $color-table-footer: darken($base-color, 50);
+    $color-table-footer: darken($background-table, 50);
     
 /* Highlights */
     $general-highlight: rgba(white, .05);
