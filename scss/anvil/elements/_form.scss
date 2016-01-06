@@ -239,9 +239,12 @@
     .a-addon {
         i {
             background: $background-addon-error;
-            border-left: none;
             border-color: $border-input-error;
             color: $color-addon-error;
+        }
+
+        input + i {
+            border-left: none;
         }
     }
 

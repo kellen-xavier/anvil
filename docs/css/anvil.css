@@ -1097,9 +1097,11 @@ html {
 
 .a-input--error .a-addon i {
   background: #fdf5f5;
-  border-left: none;
   border-color: #DE5252;
   color: #DE5252; }
+
+.a-input--error .a-addon input + i {
+  border-left: none; }
 
 .a-input--error .a-error {
   background: #DE5252;
