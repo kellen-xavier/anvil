@@ -419,6 +419,9 @@ html {
 .full {
   width: 100%; }
 
+.hide {
+  display: none; }
+
 .rounded {
   border-radius: 10px; }
 

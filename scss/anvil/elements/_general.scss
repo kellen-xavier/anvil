@@ -44,6 +44,11 @@ html {
 	width: 100%;
 }
 
+// Display
+.hide {
+	display: none;
+}
+
 // Roundness
 .rounded {
     border-radius: ($base-space * 2);
