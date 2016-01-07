@@ -21,6 +21,12 @@
         font-size: $fs-14;
         font-weight: bold;
         padding-bottom: $base-space * 2;
+
+        sup {
+            color: $danger-color;
+            font-size: small;
+            top: -2px;
+        }
     }
     
     textarea,

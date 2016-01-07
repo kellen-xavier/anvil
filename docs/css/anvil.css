@@ -820,6 +820,12 @@ html {
     font-size: 0.875em;
     font-weight: bold;
     padding-bottom: 10px; }
+    .a-input label sup, .a-input--group .a-input--group label sup,
+    .a-input--group .a-input label sup, .a-input--radio label sup,
+    .a-input--checkbox label sup, .a-input--error label sup {
+      color: #DE5252;
+      font-size: small;
+      top: -2px; }
   .a-input textarea, .a-input--group .a-input--group textarea,
   .a-input--group .a-input textarea, .a-input--radio textarea,
   .a-input--checkbox textarea, .a-input--error textarea,
