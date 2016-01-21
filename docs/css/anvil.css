@@ -881,7 +881,9 @@ html {
   .a-input textarea, .a-input--group .a-input--group textarea,
   .a-input--group .a-input textarea, .a-input--radio textarea,
   .a-input--checkbox textarea, .a-input--error textarea {
-    max-width: 100%; }
+    height: auto;
+    max-width: 100%;
+    min-height: 42px; }
   .a-input select, .a-input--group .a-input--group select,
   .a-input--group .a-input select, .a-input--radio select,
   .a-input--checkbox select, .a-input--error select {
@@ -1098,6 +1100,35 @@ html {
   .a-input--radio input[type=radio]:disabled + label:after,
   .a-input--checkbox input[type=radio]:disabled + label:after {
     background: #a6a6a6; }
+
+.a-input--toggle input[type=checkbox] {
+  display: none; }
+  .a-input--toggle input[type=checkbox]:checked + label {
+    background: #BCE6A6; }
+    .a-input--toggle input[type=checkbox]:checked + label:after {
+      left: 36px; }
+
+.a-input--toggle label {
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  transition: background .50s;
+  width: 75px; }
+  .a-input--toggle label:hover:after {
+    border-color: #ddd; }
+  .a-input--toggle label:after {
+    background: #fff;
+    border-radius: 4px;
+    content: '';
+    height: 26px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: all .25s;
+    width: 50%; }
 
 .a-input--error input {
   border-color: #DE5252;

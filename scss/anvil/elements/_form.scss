@@ -58,7 +58,9 @@
     }
 
     textarea {
+        height: auto;
         max-width: 100%;
+        min-height: 42px;
     }
 
     select {
@@ -225,6 +227,49 @@
             &:after {
                 background: $color-radio-disabled;
             }
+        }
+    }
+}
+
+.a-input--toggle {
+    input[type=checkbox] {
+        display: none;
+
+        &:checked {
+            & + label {
+                background: #BCE6A6;
+
+                &:after {
+                    left: 36px;
+                }
+            }
+        }
+    }
+
+    label {
+        background: #eee;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        height: 30px;
+        position: relative;
+        transition: background .50s;
+        width: 75px;
+
+        &:hover:after { 
+            border-color: #ddd;
+        }
+
+        &:after {
+            background: #fff;
+            border-radius: 4px;
+            content: '';
+            height: 26px;
+            left: 2px;
+            position: absolute;
+            top: 2px;
+            transition: all .25s;
+            width: 50%;         
         }
     }
 }
