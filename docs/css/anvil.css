@@ -1104,12 +1104,12 @@ html {
 .a-input--toggle input[type=checkbox] {
   display: none; }
   .a-input--toggle input[type=checkbox]:checked + label {
-    background: #BCE6A6; }
+    background: #aad594; }
     .a-input--toggle input[type=checkbox]:checked + label:after {
       left: 36px; }
 
 .a-input--toggle label {
-  background: #eee;
+  background: #e6e6e6;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -1117,11 +1117,9 @@ html {
   position: relative;
   transition: background .50s;
   width: 75px; }
-  .a-input--toggle label:hover:after {
-    border-color: #ddd; }
   .a-input--toggle label:after {
     background: #fff;
-    border-radius: 4px;
+    border-radius: 3px;
     content: '';
     height: 26px;
     left: 2px;

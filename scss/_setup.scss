@@ -65,6 +65,10 @@
         // Checkbox
         $background-checkbox: $base-color;
         $background-checkbox-disabled: darken($background-checkbox, 5);
+        // Toggle
+        $background-toggle: darken($base-color, 10);
+        $background-toggle-button: $base-color;
+        $background-toggle-activate: lighten($success-color, 25);
         // Addon
         $background-addon: darken($background-input, 5);
         $background-addon-error: $background-input-error;

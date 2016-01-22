@@ -237,7 +237,7 @@
 
         &:checked {
             & + label {
-                background: #BCE6A6;
+                background: $background-toggle-activate;
 
                 &:after {
                     left: 36px;
@@ -247,8 +247,8 @@
     }
 
     label {
-        background: #eee;
-        border-radius: 5px;
+        background: $background-toggle;
+        border-radius: $base-space;
         cursor: pointer;
         display: inline-block;
         height: 30px;
@@ -256,13 +256,9 @@
         transition: background .50s;
         width: 75px;
 
-        &:hover:after { 
-            border-color: #ddd;
-        }
-
         &:after {
-            background: #fff;
-            border-radius: 4px;
+            background: $background-toggle-button;
+            border-radius: 3px;
             content: '';
             height: 26px;
             left: 2px;
