@@ -1195,3 +1195,9 @@ html {
 
 .a-table--framed {
   border: 1px solid #d9d9d9; }
+
+.a-progress {
+  margin: 0;
+  padding: 0; }
+  .a-progress li {
+    list-style: none; }
