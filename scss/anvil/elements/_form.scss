@@ -232,6 +232,8 @@
 }
 
 .a-input--toggle {
+    height: 42px;
+
     input[type=checkbox] {
         display: none;
 
@@ -252,7 +254,7 @@
         cursor: pointer;
         display: inline-block;
         height: 36px;
-        margin: 6px 0;
+        margin: 3px 0;
         position: relative;
         transition: background .50s;
         width: 75px;
