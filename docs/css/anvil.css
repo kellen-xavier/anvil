@@ -1113,7 +1113,8 @@ html {
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
+  height: 36px;
+  margin: 6px 0;
   position: relative;
   transition: background .50s;
   width: 75px; }
@@ -1121,7 +1122,7 @@ html {
     background: #fff;
     border-radius: 3px;
     content: '';
-    height: 26px;
+    height: 32px;
     left: 2px;
     position: absolute;
     top: 2px;
