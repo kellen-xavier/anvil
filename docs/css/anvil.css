@@ -1101,33 +1101,34 @@ html {
   .a-input--checkbox input[type=radio]:disabled + label:after {
     background: #a6a6a6; }
 
-.a-input--toggle input[type=checkbox] {
-  display: none; }
-  .a-input--toggle input[type=checkbox]:checked + label {
-    background: #aad594; }
-    .a-input--toggle input[type=checkbox]:checked + label:after {
-      left: 36px; }
-
-.a-input--toggle label {
-  background: #e6e6e6;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  height: 36px;
-  margin: 6px 0;
-  position: relative;
-  transition: background .50s;
-  width: 75px; }
-  .a-input--toggle label:after {
-    background: #fff;
-    border-radius: 3px;
-    content: '';
-    height: 32px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    transition: all .25s;
-    width: 50%; }
+.a-input--toggle {
+  height: 42px; }
+  .a-input--toggle input[type=checkbox] {
+    display: none; }
+    .a-input--toggle input[type=checkbox]:checked + label {
+      background: #aad594; }
+      .a-input--toggle input[type=checkbox]:checked + label:after {
+        left: 36px; }
+  .a-input--toggle label {
+    background: #e6e6e6;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    margin: 3px 0;
+    position: relative;
+    transition: background .50s;
+    width: 75px; }
+    .a-input--toggle label:after {
+      background: #fff;
+      border-radius: 3px;
+      content: '';
+      height: 32px;
+      left: 2px;
+      position: absolute;
+      top: 2px;
+      transition: all .25s;
+      width: 50%; }
 
 .a-input--error input {
   border-color: #DE5252;
@@ -1198,7 +1199,34 @@ html {
   border: 1px solid #d9d9d9; }
 
 .a-progress {
+  display: flex;
   margin: 0;
-  padding: 0; }
+  line-height: 5px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100%; }
   .a-progress li {
-    list-style: none; }
+    background: #fff;
+    border: 2px solid #ccc;
+    border-left: none;
+    border-right: none;
+    list-style: none;
+    flex-grow: 1;
+    position: relative; }
+    .a-progress li:first-child {
+      border-radius: 5px 0 0 5px;
+      border-left: 2px solid #ccc; }
+    .a-progress li:last-child {
+      border-radius: 0 5px 5px 0;
+      border-right: 2px solid #ccc; }
+    .a-progress li a {
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 100%;
+      color: #666;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 4px 8px;
+      text-decoration: none;
+      vertical-align: middle; }
