@@ -84,10 +84,12 @@
             user-select: none;
             vertical-align: middle;
             width: 12%;
+        }
 
-            & + input {
-                border-left: none;
-            }
+        i + input + i,
+        i + input,
+        input + i {
+            border-left: none;
         }
     }
 }
