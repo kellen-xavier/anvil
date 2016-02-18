@@ -121,6 +121,7 @@ html {
 	li {
 		display: inline-block;
 		list-style: none;
+		margin-left: -($base-space);
 
 		span,
 		a {
@@ -129,9 +130,10 @@ html {
 			border-bottom-width: 2px;
 			color: $color-pagination;
 			float: left;
-			padding: ($base-space) ($base-space * 2);
+			padding: ($base-space) 0;
 			text-align: center;
 			text-decoration: none;
+			width: 35px;
 
 			&:hover {
 				background: $background-pagination-hovered;
