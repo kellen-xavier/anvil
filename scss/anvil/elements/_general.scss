@@ -157,6 +157,14 @@ html {
 				cursor: default;
 			}
 		}
+
+		&:nth-child(2) {
+			margin-right: 10px;
+		}
+
+		&:last-child(2) {
+			margin-left: 10px;
+		}
 	}
 }
 // Scrollbar
