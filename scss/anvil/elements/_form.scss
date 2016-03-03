@@ -4,7 +4,7 @@
 }
 
 .a-input {
-    background: $background-input;
+    background: transparent;
     position: relative;
     vertical-align: middle;
     transition: background .15s ease;
@@ -32,7 +32,7 @@
     textarea,
     select,
     input {
-        background: transparent;
+        background: $background-input;
         border: 1px solid $border-input;
         border-bottom-width: 2px;
         box-shadow: none;
