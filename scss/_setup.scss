@@ -158,8 +158,8 @@
     $background-table-striped: darken($background-table, 5);
     $background-table-hover: darken($background-table, 10);
     // Borders
-    $border-table: darken($background-table, 15);
-    $border-table-header: darken($background-table, 20);
+    $border-table: darken($background-table, 10);
+    $border-table-header: darken($background-table, 10);
     $border-table-footer: $border-table-header;
     // Colors
     $color-table-footer: darken($background-table, 50);
