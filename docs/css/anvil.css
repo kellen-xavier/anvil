@@ -480,9 +480,10 @@ html {
       border-bottom-width: 2px;
       color: gray;
       float: left;
-      padding: 5px 10px;
+      padding: 5px 0;
       text-align: center;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 35px; }
       .pagination li span:hover,
       .pagination li a:hover {
         background: #f2f2f2; }
@@ -596,6 +597,7 @@ html {
   transition: background .15s ease, border .15s ease; }
   .a-button a, .a-button--label a, .a-button--link a, .a-button--primary a, .a-button--success a, .a-button--danger a, .a-button--warning a {
     color: gray;
+    cursor: pointer;
     display: block;
     padding: 10px 15px;
     text-decoration: none; }
@@ -783,7 +785,7 @@ html {
 .a-input, .a-input--group .a-input--group,
 .a-input--group .a-input, .a-input--radio,
 .a-input--checkbox, .a-input--error {
-  background: #fff;
+  background: transparent;
   position: relative;
   vertical-align: middle;
   transition: background .15s ease;
@@ -793,9 +795,7 @@ html {
   .a-input--checkbox + .a-input--group, .a-input--error + .a-input--group,
   .a-input + .a-input, .a-input--radio + .a-input,
   .a-input--checkbox + .a-input, .a-input--error + .a-input, .a-input--group .a-input--group + .a-input--group, .a-input--group .a-input + .a-input--group, .a-input--group .a-input--radio + .a-input--group, .a-input--group
-  .a-input--checkbox + .a-input--group, .a-input--group .a-input--error + .a-input--group,
-  .a-input--group .a-input--group + .a-input,
-  .a-input--group .a-input + .a-input,
+  .a-input--checkbox + .a-input--group, .a-input--group .a-input--error + .a-input--group, .a-input--group .a-input--group + .a-input, .a-input--group .a-input + .a-input,
   .a-input--group .a-input--radio + .a-input,
   .a-input--group
   .a-input--checkbox + .a-input,
@@ -839,7 +839,7 @@ html {
   .a-input input, .a-input--group .a-input--group input,
   .a-input--group .a-input input, .a-input--radio input,
   .a-input--checkbox input, .a-input--error input {
-    background: transparent;
+    background: #fff;
     border: 1px solid #e6e6e6;
     border-bottom-width: 2px;
     box-shadow: none;
@@ -905,7 +905,7 @@ html {
       text-align: center;
       user-select: none;
       vertical-align: middle;
-      width: 12%; }
+      width: 40px; }
     .a-input .a-addon i + input + i, .a-input--group .a-input--group .a-addon i + input + i, .a-input--radio .a-addon i + input + i,
     .a-input--checkbox .a-addon i + input + i, .a-input--error .a-addon i + input + i,
     .a-input .a-addon i + input, .a-input--group .a-input--group .a-addon i + input, .a-input--radio .a-addon i + input,
@@ -920,9 +920,7 @@ html {
   width: 100%; }
   .a-input--group + .a-input + .a-input, .a-input--group + .a-input--radio + .a-input, .a-input--group +
   .a-input--checkbox + .a-input, .a-input--group + .a-input--error + .a-input, .a-input--group .a-input--group + .a-input--group + .a-input--group, .a-input--group .a-input--group + .a-input + .a-input--group, .a-input--group .a-input--group + .a-input--radio + .a-input--group, .a-input--group .a-input--group +
-  .a-input--checkbox + .a-input--group, .a-input--group .a-input--group + .a-input--error + .a-input--group,
-  .a-input--group .a-input--group + .a-input--group + .a-input,
-  .a-input--group .a-input--group + .a-input + .a-input,
+  .a-input--checkbox + .a-input--group, .a-input--group .a-input--group + .a-input--error + .a-input--group, .a-input--group .a-input--group + .a-input--group + .a-input, .a-input--group .a-input--group + .a-input + .a-input,
   .a-input--group .a-input--group + .a-input--radio + .a-input,
   .a-input--group .a-input--group +
   .a-input--checkbox + .a-input,
@@ -953,39 +951,29 @@ html {
   .a-input--group .a-input--group + .a-input, .a-input--group + .a-input--radio, .a-input--group +
   .a-input--checkbox, .a-input--group + .a-input--error {
     clear: both; }
-  .a-input--group .a-input--group, .a-input--group .a-input--group,
-  .a-input--group .a-input,
+  .a-input--group .a-input--group, .a-input--group .a-input--group, .a-input--group .a-input,
   .a-input--group .a-input--radio,
   .a-input--group
   .a-input--checkbox,
   .a-input--group .a-input--error {
     float: left;
     width: 50%; }
-    .a-input--group .a-input--group + .a-input--group, .a-input--group .a-input--group + .a-input--group,
-    .a-input--group .a-input--group + .a-input,
+    .a-input--group .a-input--group + .a-input--group, .a-input--group .a-input--group + .a-input--group, .a-input--group .a-input--group + .a-input,
     .a-input--group .a-input--group + .a-input--radio,
     .a-input--group .a-input--group +
     .a-input--checkbox,
-    .a-input--group .a-input--group + .a-input--error, .a-input--group .a-input--group + .a-input--group,
-    .a-input--group .a-input + .a-input--group,
+    .a-input--group .a-input--group + .a-input--error, .a-input--group .a-input--group + .a-input--group, .a-input--group .a-input + .a-input--group,
     .a-input--group .a-input--radio + .a-input--group,
     .a-input--group
     .a-input--checkbox + .a-input--group,
     .a-input--group .a-input--error + .a-input--group, .a-input--group .a-input--group + .a-input--group, .a-input--group .a-input + .a-input--group, .a-input--group .a-input--radio + .a-input--group, .a-input--group
-    .a-input--checkbox + .a-input--group, .a-input--group .a-input--error + .a-input--group,
-    .a-input--group .a-input--group + .a-input,
-    .a-input--group .a-input + .a-input,
-    .a-input--group .a-input--radio + .a-input,
-    .a-input--group
-    .a-input--checkbox + .a-input,
-    .a-input--group .a-input--error + .a-input, .a-input--group .a-input--group + .a-input--radio,
-    .a-input--group .a-input + .a-input--radio,
+    .a-input--checkbox + .a-input--group, .a-input--group .a-input--error + .a-input--group, .a-input--group .a-input--group + .a-input, .a-input--group .a-input + .a-input, .a-input--group .a-input--radio + .a-input, .a-input--group
+    .a-input--checkbox + .a-input, .a-input--group .a-input--error + .a-input, .a-input--group .a-input--group + .a-input--radio, .a-input--group .a-input + .a-input--radio,
     .a-input--group .a-input--radio + .a-input--radio,
     .a-input--group
     .a-input--checkbox + .a-input--radio,
     .a-input--group .a-input--error + .a-input--radio, .a-input--group .a-input--group +
-    .a-input--checkbox,
-    .a-input--group .a-input +
+    .a-input--checkbox, .a-input--group .a-input +
     .a-input--checkbox,
     .a-input--group .a-input--radio +
     .a-input--checkbox,
@@ -993,8 +981,7 @@ html {
     .a-input--checkbox +
     .a-input--checkbox,
     .a-input--group .a-input--error +
-    .a-input--checkbox, .a-input--group .a-input--group + .a-input--error,
-    .a-input--group .a-input + .a-input--error,
+    .a-input--checkbox, .a-input--group .a-input--group + .a-input--error, .a-input--group .a-input + .a-input--error,
     .a-input--group .a-input--radio + .a-input--error,
     .a-input--group
     .a-input--checkbox + .a-input--error,
@@ -1165,14 +1152,14 @@ html {
   width: 100%; }
   .a-table thead tr, .a-table--striped thead tr, .a-table--bordered thead tr, .a-table--hovered thead tr, .a-table--framed thead tr {
     background: #fff;
-    border-bottom: 2px solid #cccccc; }
+    border-bottom: 2px solid #e6e6e6; }
     .a-table thead tr th, .a-table--striped thead tr th, .a-table--bordered thead tr th, .a-table--hovered thead tr th, .a-table--framed thead tr th {
       padding: 15px 20px;
       text-align: left;
       vertical-align: middle; }
   .a-table tbody tr, .a-table--striped tbody tr, .a-table--bordered tbody tr, .a-table--hovered tbody tr, .a-table--framed tbody tr {
     background: #fff;
-    border-top: 1px solid #d9d9d9; }
+    border-top: 1px solid #e6e6e6; }
     .a-table tbody tr td, .a-table--striped tbody tr td, .a-table--bordered tbody tr td, .a-table--hovered tbody tr td, .a-table--framed tbody tr td {
       padding: 15px 20px;
       vertical-align: middle; }
@@ -1180,7 +1167,7 @@ html {
         display: inline-block; }
   .a-table tfoot tr, .a-table--striped tfoot tr, .a-table--bordered tfoot tr, .a-table--hovered tfoot tr, .a-table--framed tfoot tr {
     background: #fff;
-    border-top: 2px solid #cccccc; }
+    border-top: 2px solid #e6e6e6; }
     .a-table tfoot tr td, .a-table--striped tfoot tr td, .a-table--bordered tfoot tr td, .a-table--hovered tfoot tr td, .a-table--framed tfoot tr td {
       color: gray;
       font-size: 0.75em;
@@ -1191,68 +1178,13 @@ html {
   background: #f2f2f2; }
 
 .a-table--bordered thead tr th {
-  border: 1px solid #d9d9d9; }
+  border: 1px solid #e6e6e6; }
 
 .a-table--bordered tbody tr td {
-  border: 1px solid #d9d9d9; }
+  border: 1px solid #e6e6e6; }
 
 .a-table--hovered tbody tr:hover {
   background: #e6e6e6; }
 
 .a-table--framed {
-  border: 1px solid #d9d9d9; }
-
-.a-progress {
-  display: flex;
-  margin: 0;
-  line-height: 10px;
-  padding: 0;
-  position: relative;
-  width: 100%; }
-  .a-progress li {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-left: none;
-    border-right: none;
-    list-style: none;
-    flex-grow: 1;
-    position: relative; }
-    .a-progress li:before {
-      background: #f5f5f5;
-      border: 1px solid #ddd;
-      border-radius: 100%;
-      content: '';
-      position: absolute;
-      left: -5px;
-      height: 30px;
-      top: -10px;
-      width: 30px;
-      z-index: 1; }
-    .a-progress li:first-child {
-      border-radius: 6px 0 0 6px;
-      border-left: 1px solid #ddd; }
-    .a-progress li:last-child {
-      border-radius: 0 6px 6px 0;
-      border-right: 1px solid #ddd;
-      flex-grow: 0; }
-    .a-progress li:after {
-      background: #f5f5f5;
-      border-radius: 6px;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 2; }
-    .a-progress li a {
-      background: #999;
-      border-radius: 100%;
-      color: #fff;
-      font-weight: bold;
-      font-size: 12px;
-      padding: 1% 2%;
-      position: relative;
-      text-decoration: none;
-      vertical-align: middle;
-      z-index: 9; }
+  border: 1px solid #e6e6e6; }
