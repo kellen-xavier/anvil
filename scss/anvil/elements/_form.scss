@@ -28,6 +28,11 @@
             top: -2px;
         }
     }
+
+    p {
+        color: $color-input;
+        margin: 10px 0;
+    }
     
     textarea,
     select,
