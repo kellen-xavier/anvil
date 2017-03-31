@@ -1,9 +1,11 @@
 .a-toast {
 	background: #323232;
 	border-radius: 2px;
-	bottom: 10px;
+	bottom: -48px;
+	color: #fff;
 	left: 0;
 	font-size: $fs-14;
+	height: 48px;
 	margin: 0 auto;
 	min-width: 288px;
 	max-width: 568px;
@@ -11,24 +13,4 @@
 	padding: 16px 24px;
 	right: 0;
 	z-index: 99;
-}
-
-.a-toast--success {
-	@extend .a-toast;
-	color: $success-color;
-}
-
-.a-toast--danger {
-	@extend .a-toast;
-	color: $danger-color;
-}
-
-.a-toast--info {
-	@extend .a-toast;
-	color: $info-color;
-}
-
-.a-toast--warning {
-	@extend .a-toast;
-	color: $warning-color;
 }
