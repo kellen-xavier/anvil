@@ -40,5 +40,9 @@
 	.a-card--footer {
 		border-top: 1px solid $border-card;
 		padding: $base-space * 2;
+
+		.action {
+			display: inline-block;
+		}
 	}
 }
