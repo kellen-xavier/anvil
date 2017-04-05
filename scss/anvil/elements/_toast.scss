@@ -1,7 +1,6 @@
 .a-toast {
 	background: #323232;
 	border-radius: 2px;
-	bottom: -48px;
 	color: #fff;
 	left: 0;
 	font-size: $fs-14;
@@ -13,4 +12,16 @@
 	padding: 16px 24px;
 	right: 0;
 	z-index: 99;
+}
+
+.a-toast--bottom {
+	@extend .a-toast;
+	
+	bottom: -48px;
+}
+
+.a-toast--top {
+	@extend .a-toast;
+
+	top: -48px;
 }
